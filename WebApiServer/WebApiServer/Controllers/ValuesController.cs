@@ -4,6 +4,8 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace WebApiServer.Controllers
 {
@@ -19,6 +21,13 @@ namespace WebApiServer.Controllers
         public string Get(int id)
         {
             return "value";
+        }
+
+        private async Task<string> waitString()
+        {
+            Thread.Sleep(2000);
+            
+            return "wait value";
         }
 
         // POST api/values
