@@ -1,0 +1,128 @@
+﻿@model List<SEPInstance.Authorization.PermissionTree>
+@{
+    ViewBag.Title = "角色权限分配";
+}
+@{
+    var currentPermission = (List<Abp.Authorization.Permission>)ViewBag.permissions;
+}
+
+<input type="hidden" value="@ViewBag.roleId" id="roleId" />
+<div class="content-wrapper">
+    <section class="content-header">
+        <h1>权限分配</h1>
+        @Html.BreadCrumb()
+    </section>
+    <section class="content">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="box">
+                    <div class="box-body table-responsive">
+                        <table class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>名称</th>
+                                    <th>权限</th>
+                                    <th>子权限</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var first in Model) { 
+                                    <tr>
+                                        @{
+                                          var data = first.Child.Count + first.Child.Sum(m => m.Child.Count);
+                                          if (data == 0)
+                                          {
+                                              data = 1;
+                                          }
+                                          else {
+                                              data++;
+                                          }
+                                        }
+                                        <td rowspan="@data">
+                                            @first.DisplayName
+                                        </td>
+                                    </tr>
+                                    foreach (var second in first.Child)
+                                    {
+                                        <tr>
+                                            <td rowspan="@(second.Child.Count == 0 ? 1 : second.Child.Count+1)">
+                                                @if (currentPermission.Any(m => m.Name == second.Name))
+                                                {
+                                                    <input type="checkbox" class="roleAuth" value="@second.Name" id="@second.Name" checked /><span for="@second.Name" class="text">@second.DisplayName</span>
+                                                }
+                                                else
+                                                {
+                                                    <input type="checkbox" class="roleAuth" value="@second.Name" id="@second.Name" /><span for="@second.Name" class="text">@second.DisplayName</span>
+                                                }
+                                            </td>
+                                        </tr>
+                                        foreach (var third in second.Child)
+                                        {
+                                            <tr>
+                                                <td>
+                                                    @if (currentPermission.Any(m => m.Name == third.Name))
+                                                    {
+                                                        <input type="checkbox" class="roleAuth" value="@third.Name" id="@third.Name" checked /><span for="@third.Name" class="text">@third.DisplayName</span>
+                                                    }
+                                                    else
+                                                    {
+                                                        <input type="checkbox" class="roleAuth" value="@third.Name" id="@third.Name" /><span for="@third.Name" class="text">@third.DisplayName</span>
+                                                    }
+                                                </td>
+                                            </tr>
+                                        }
+                                    }
+
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7 col-lg-offset-5">
+                <button type="button" class="btn btn-primary" id="subBtn">保存</button>
+            </div>
+        </div>
+    </section>
+</div>
+@section Scripts{
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#subBtn").click(function (e) {
+                e.preventDefault();
+                var result = new Array();
+                $(".roleAuth").each(function (index, element) {
+                    if ($(element).prop("checked")) {
+                        result.push($(element).val())
+                    }
+                })
+                abp.ui.setBusy("",
+                    abp.ajax({
+                        url: "/Roles/RoleAuthorization",
+                        data: JSON.stringify({
+                            RoleId: $("#roleId").val(),
+                            GrantedPermissionNames: result
+                        }),
+                        success: function (data) {
+                            swal(
+                                {
+                                    title: "保存成功",
+                                    text: "",
+                                    type: "success"
+                                },
+                                function (isConfirm) {
+                                    if (isConfirm) {
+                                        window.location.href = "/Roles/RolesList";
+                                    }
+                                }
+                            );
+                        },
+                        error: function (err) {
+                            abp.message.error("保存失败")
+                        }
+                    }))
+
+            })
+        })
+    </script>
+}

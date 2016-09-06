@@ -1,0 +1,167 @@
+﻿@model SEPInstance.Dto.InputDto.Users.CreateUserInput
+
+@{
+    ViewBag.Title = "新增用户";
+}
+
+<style>
+    .error {
+        color: red;
+    }
+    .form-body {
+    margin-top:30px;
+    }
+</style>
+<div class="box box-primary" style="margin-top:30px;">
+    <div class="box-header with-border">
+        <h3 class="box-title">新增用户</h3>
+
+        @Html.BreadCrumb()
+
+    </div>
+    @using (Html.BeginForm("AddUser", "Users", FormMethod.Post, new { @id = "form", @class = "form-horizontal" }))
+    {
+        @Html.AntiForgeryToken()
+        <div class="form-body">
+            
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <div class="form-group">
+                @Html.LabelFor(model => model.UserName, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-8">
+                    @Html.EditorFor(model => model.UserName, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.UserName, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-8">
+                    @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.EmailAddress, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-8">
+                    @Html.EditorFor(model => model.EmailAddress, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.EmailAddress, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Password, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-8">
+                    @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <div class="row">
+                    <div class="col-sm-10">
+                        <input type="button" value="新增" class="btn btn-primary btn-sm blue" id="subBtn" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+
+
+@section Scripts{
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#form").validate({
+                rules: {
+                    UserName: {
+                        required: true,
+                        maxlength: 100,
+                        remote: {
+                            type: "POST",
+                            url: "/Users/RemoteCheckExist",             //用户名是否存在
+                            data: {
+                                UserName: function () { return $("#UserName").val(); }
+                            }
+                        }
+                    },
+                    Name: {
+                        required: true,
+                        maxlength: 100
+                    },
+                    EmailAddress: {
+                        required: true,
+                        maxlength: 100,
+                        email: true,
+                        remote: {
+                            type: "POST",
+                            url: "/Users/RemoteCheckEmailExist",             //邮箱是否存在
+                            data: {
+                                EmailAddress: function () { return $("#EmailAddress").val(); }
+                            }
+                        }
+                    },
+                    Password: {
+                        required: true,
+                        maxlength: 100
+                    }
+                },
+                messages: {
+                    UserName: {
+                        required: "请输入用户名",
+                        maxlength: "最多100位",
+                        remote:"该用户名已存在"
+                    },
+                    Name: {
+                        required: "请输入姓名",
+                        maxlength: "最多100位"
+                    },
+                    EmailAddress: {
+                        required: "请输入邮箱",
+                        maxlength: "最多100位",
+                        email: "邮箱地址不合法",
+                        remote: "该邮箱地址已存在"
+                    },
+                    Password: {
+                        required: "请输入密码",
+                        maxlength: "最多100位"
+                    }
+                }
+            });
+            $("#subBtn").click(function (e) {
+                if (!$("#form").valid())
+                    return false;
+                e.preventDefault();
+                abp.ui.setBusy($('form'), abp.ajax({
+                    url: "/Users/AddUser",
+                    data: JSON.stringify({
+                        UserName: $("#UserName").val(),
+                        Name: $("#Name").val(),
+                        Surname: $("#Surname").val(),
+                        EmailAddress: $("#EmailAddress").val(),
+                        Password: $("#Password").val()
+                    }),
+                    success: function (data) {
+                        swal(
+                               {
+                                   title: "添加成功",
+                                   text: "",
+                                   type: "success"
+                               },
+                               function (isConfirm) {
+                                   if (isConfirm) {
+                                       window.location.href = "/Users/UsersList";
+                                   }
+                               }
+                           );
+                    },
+                    error: function (err) {
+                        abp.message.error(err)
+                    }
+                }));
+
+            })
+        })
+    </script>
+}

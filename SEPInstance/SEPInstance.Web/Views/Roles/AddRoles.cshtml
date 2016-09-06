@@ -1,0 +1,112 @@
+﻿@model SEPInstance.Dto.InputDto.Roles.CreateRoleInput
+@{
+    ViewBag.Title = "SMC系统_新增角色";
+}
+<style>
+    .error {
+        color: red;
+    }
+</style>
+<div class="box box-primary" style="margin-top:30px;">
+    <div class="box-header with-border">
+        <h3 class="box-title">创建角色</h3>
+        
+            @Html.BreadCrumb()
+        
+    </div>
+    <form id="form" class="form-horizontal" style="margin-top:20px;">
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        
+        <div class="form-body">
+            <div class="form-group">
+                <label for="Name" class="col-sm-2 control-label">角色名</label>
+                <div class="col-sm-9">
+                    @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control", @maxlength = 32, @placeholder = "角色名" } })
+                    @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger", @placeholder = "角色名" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="Description" class="col-sm-2 control-label">描述 </label>
+                <div class="col-sm-9">
+                    @Html.TextAreaFor(model => model.Description, new { htmlAttributes = new { @class = "form-control", @maxlength = 50 }, @rows = 5, @style = "width:100%;", @placeholder = "描述" })
+                    @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger", @placeholder = "描述" })
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <div class="row">
+                <div class="col-sm-11">
+                    <button type="button" class="btn btn-default btn-sm" data-dismiss="modal" onclick="Back()">取消</button>
+                    <button type="button" class="btn btn-primary btn-sm blue" onclick="Save()"><i class="fa fa-save"></i> <span>保存</span></button>
+                </div>
+            </div>
+            
+        </div>
+    </form>
+    
+</div>
+@section Scripts
+{
+<script type="text/javascript">
+    $(function () {
+        $("#form").validate({
+            rules: {
+                Name: {
+                    required: true,
+                    maxlength: 32
+                },
+                Description: {
+                    maxlength: 50
+                },
+                remote: {
+
+                }
+            },
+            messages: {
+                Name: {
+                    required: "请输入角色名",
+                    maxlength: "最多输入32位"
+                },
+                Description: {
+                    maxlength: "最多输入50位"
+                }
+            }
+        });
+    });
+    function Save() {
+        if (!$("form").valid())
+            return false;
+        //this.preventDefault();
+        var newRole = {
+            Name: $('#Name').val(),
+            Description: $('#Description').val()
+        }; 
+        abp.ui.setBusy($('form'),abp.ajax({
+            url: '/Roles/AddRoles',
+            data: JSON.stringify(newRole),
+            success: function (data) {
+                swal(
+                    {
+                        title: '添加成功',
+                        text: '',
+                        type: 'success'
+                    },
+                    function (isConfirm) {
+                        if (isConfirm) {
+                            location.href = '/Roles/RolesList';
+                        }
+                    }
+                    );
+            },
+            error: function (err) {
+                abp.message.error('添加失败！');
+            }
+        }));
+    }
+    function Back() {
+        location.href = '/Roles/RolesList';
+    }
+</script>
+}
+

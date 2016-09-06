@@ -1,0 +1,106 @@
+﻿@using Webdiyer.WebControls.Mvc
+@model PagedList<SEPInstance.Dto.OutputDto.Log.LogListDto>
+@{
+    Layout = null;
+}
+@{
+    var userDic = (Dictionary<long, string>)ViewBag.UserDic;
+}
+
+<table class="table table-hover table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.UserName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ServiceName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MethodName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Parameters)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ExecutionTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ExecutionDuration)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ClientIpAddress)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ClientName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BrowserInfo)
+            </th>
+            <th>
+                    @Html.DisplayNameFor(model => model.Exception)
+                </th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @if (userDic.ContainsKey(item.UserId ?? 0))
+                    {
+                        @Html.DisplayFor(m => userDic[item.UserId ?? 0])
+                    }
+                    else
+                    {
+                        @Html.DisplayFor(modelItem => item.UserId)
+                    }
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ServiceName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MethodName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Parameters)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ExecutionTime)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ExecutionDuration) ms
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ClientIpAddress)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ClientName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.BrowserInfo)
+                </td>
+                <td>
+                        @Html.DisplayFor(modelItem => item.Exception)
+                    </td>
+            </tr>
+        }
+    </tbody>
+</table>
+@Ajax.Pager(Model, new PagerOptions
+{
+    PageIndexParameterName = "PageIndex",
+    HtmlAttributes = new Dictionary<string, object> { { "style", "float:right" } },
+    ContainerTagName = "ul",
+    CssClass = "pagination",
+    CurrentPagerItemTemplate = "<li class=\"active\"><a href=\"#\">{0}</a></li>",
+    DisabledPagerItemTemplate = "<li class=\"disabled\"><a>{0}</a></li>",
+    PagerItemTemplate = "<li>{0}</li>",
+    Id = "bootstrappager"
+},
+                                new MvcAjaxOptions { UpdateTargetId = "articles", HttpMethod = "Get", DataFormId = "searchForm" })
+
+
+
+

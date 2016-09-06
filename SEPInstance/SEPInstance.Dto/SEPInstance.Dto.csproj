@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FB14B898-2DAD-462E-B842-6594A5BABC9D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SEPInstance.Dto</RootNamespace>
+    <AssemblyName>SEPInstance.Dto</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Abp">
+      <HintPath>..\packages\Abp.0.11.0.2\lib\net452\Abp.dll</HintPath>
+    </Reference>
+    <Reference Include="Abp.AutoMapper">
+      <HintPath>..\packages\Abp.AutoMapper.0.11.0.2\lib\net452\Abp.AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Abp.Zero, Version=0.11.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Abp.Zero.0.11.0.0\lib\net452\Abp.Zero.dll</HintPath>
+    </Reference>
+    <Reference Include="AutoMapper">
+      <HintPath>..\packages\AutoMapper.5.1.1\lib\net45\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Webdiyer.MvcPager">
+      <HintPath>..\packages\Webdiyer.MvcPager.3.0.1.1\lib\Webdiyer.MvcPager.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="InputDto\Log\LogListInput.cs" />
+    <Compile Include="InputDto\Notice\NoticeFormModel.cs" />
+    <Compile Include="InputDto\Roles\CreateRoleInput.cs" />
+    <Compile Include="InputDto\Roles\EditRoleInput.cs" />
+    <Compile Include="InputDto\Roles\RoleListInput.cs" />
+    <Compile Include="InputDto\Roles\UpdateRolePermissionsInput.cs" />
+    <Compile Include="InputDto\Search\SearchDto.cs" />
+    <Compile Include="InputDto\Sessions\TenantLoginInfoDto.cs" />
+    <Compile Include="InputDto\Sessions\UserLoginInfoDto.cs" />
+    <Compile Include="InputDto\Users\CreateUserInput.cs" />
+    <Compile Include="InputDto\Users\EditUserInput.cs" />
+    <Compile Include="InputDto\Users\UserListInput.cs" />
+    <Compile Include="InputDto\Users\UserRoleInput.cs" />
+    <Compile Include="InputDto\Users\UserValidate.cs" />
+    <Compile Include="OutputDto\Log\LogListDto.cs" />
+    <Compile Include="OutputDto\Pager\PagedListDto.cs" />
+    <Compile Include="OutputDto\Roles\RoleListDto.cs" />
+    <Compile Include="OutputDto\Sessions\GetCurrentLoginInformationsOutput.cs" />
+    <Compile Include="OutputDto\Sessions\SessionStore.cs" />
+    <Compile Include="OutputDto\Users\UserListDto.cs" />
+    <Compile Include="OutputDto\Users\UserPagedDto.cs" />
+    <Compile Include="OutputDto\Users\UserRoleSetOutput.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SEPInstanceDtoModule.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SEPInstance.Core\SEPInstance.Core.csproj">
+      <Project>{17298ea0-af73-4f30-b6f1-2066100d7d74}</Project>
+      <Name>SEPInstance.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

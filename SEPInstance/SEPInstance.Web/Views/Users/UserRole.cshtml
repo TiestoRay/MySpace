@@ -1,0 +1,84 @@
+﻿@model SEPInstance.Dto.OutputDto.Users.UserRoleSetOutput
+    @{
+        ViewBag.Title = "用户角色分配";
+    }
+    <style>
+        .box-body {
+            padding-left: 30px;
+        }
+    </style>
+
+    <div class="box box-primary" style="margin-top:30px;">
+        <div class="box-header with-border">
+            <h3 class="box-title">角色分配</h3>
+
+            @Html.BreadCrumb()
+        </div>
+        <div class="box-body">
+            <div class="row">
+                <h4>请选择角色：</h4>
+                <input type="hidden" value="@Model.Id" id="userId" />
+                @{
+                    var userRoles = Model.UserRoleList;
+                }
+                @foreach (var item in Model.AllRoleList)
+                {
+                    <div class="col-sm-3" style="border: 1px solid #f4f4f4; line-height:30px;">
+                        @if (userRoles.Contains(item.Name))
+                        {
+                            <input type="checkbox" value="@item.Name" class="roleList" id="role_@item.Id" checked /><label for="role_@item.Id">@item.DisplayName</label>
+                        }
+                        else
+                        {
+                            <input type="checkbox" value="@item.Name" class="roleList" id="role_@item.Id" /><label for="role_@item.Id">@item.DisplayName</label>
+                        }
+
+                    </div>
+                }
+            </div>
+            <div class="modal-footer col-sm-10">
+                <button type="button" class="btn btn-primary btn-sm blue" id="subBtn">保存</button>
+            </div>
+        </div>
+    </div>
+    @section Scripts{
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $("#subBtn").click(function (e) {
+                    e.preventDefault();
+                    var result = new Array();
+                    $(".roleList").each(function (index, element) {
+                        if ($(element).prop("checked")) {
+                            result.push($(element).val())
+                        }
+                    })
+                    abp.ui.setBusy("",
+                        abp.ajax({
+                            url: "/Users/UserRole",
+                            data: JSON.stringify({
+                                UserId: $("#userId").val(),
+                                RolesList: result
+                            }),
+                            success: function (data) {
+                                swal(
+                                    {
+                                        title: "保存成功",
+                                        text: "",
+                                        type: "success"
+                                    },
+                                    function (isConfirm) {
+                                        if (isConfirm) {
+                                            window.location.href = "/Users/UsersList";
+                                        }
+                                    }
+                                );
+                            },
+                            error: function (err) {
+                                abp.message.error("保存失败")
+                            }
+                        }))
+
+                })
+            })
+        </script>
+    }

@@ -1,0 +1,37 @@
+﻿@using Webdiyer.WebControls.Mvc
+@model PagedList<SEPInstance.Dto.OutputDto.Log.LogListDto>
+
+<section class="content-header">
+    <h1>日志<small>日志列表</small></h1>
+    @Html.BreadCrumb()
+</section>
+<section class="content">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="box">
+                <div class="box-header">
+                    @using (Ajax.BeginForm("Index", "Log", new AjaxOptions { UpdateTargetId = "articles", HttpMethod = "Get", InsertionMode = InsertionMode.Replace }, new { @class = "", @id = "searchForm" }))
+                    {
+                        <div class="form-group form-inline">
+                            <span>搜索关键字：</span>
+                            <input type="text" name="KeyWord" style="width:200px" class="form-control" />
+                            <input type="submit" value="检 索" accesskey="S" class="btn btn-info btn-sm" />
+                        </div>
+                    }
+                </div>
+
+                <div class="box-body">
+                    <div id="articles" class="table-responsive">
+                        @Html.Partial("_AjaxLogList", Model)
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+@section Scripts
+{
+    @{Html.RegisterMvcPagerScriptResource();}
+    <script type="text/javascript" src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+}
+

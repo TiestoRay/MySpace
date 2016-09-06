@@ -1,0 +1,340 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+<style>
+    .error {
+        color: red;
+    }
+</style>
+
+<section class="content-header">
+    <h1>消息通知管理<small>Notification</small></h1>
+    @Html.BreadCrumb()
+</section>
+<section class="content">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="box box-primary">
+                <div class="box-header with-border">
+                    <h3 class="box-title">介绍</h3>
+                    <div class="box-tools pull-right">
+                        <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                            <i class="fa fa-minus"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="box-body">
+                    <p>通知（Notification）用于告知用户系统中的特定事件。ABP提供了基于实时通知基础设施的发布订阅模型（pub/sub）。</p>
+                </div>
+            </div>
+            <div class="box box-primary">
+                <div class="box-header with-border">
+                    <h3 class="box-title">订阅通知</h3>
+                    <div class="box-tools pull-right">
+                        <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                            <i class="fa fa-minus"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="box-body">
+                    <p>
+                        <strong>INotificationSubscriptionManager</strong> 提供了订阅通知的API。例如：
+                    </p>
+                    <pre>
+<span class="text-blue">public class</span> <span class="text-red">MyService</span> : <span class="text-red">ITransientDependency</span>
+{
+    <span class="text-blue">private readonly</span> <label class="label label-danger">INotificationSubscriptionManager</label> _notificationSubscriptionManager;
+    <span class="text-blue">public</span> MyService(INotificationSubscriptionManager notificationSubscriptionManager)
+    {
+        _notificationSubscriptionManager = notificationSubscriptionManager;
+    }
+    <span class="text-green">//订阅一个一般通知</span>
+    <span class="text-blue">public</span> async Task <span class="text-red">Subscribe_SentFrendshipRequest</span>(int? tenantId, long userId)
+    {
+        <span class="text-blue">await</span> _notificationSubscriptionManager<label class="label label-danger">.SubscribeAsync</label>(tenantId, userId, "<span class="text-red">SentFrendshipRequest</span>");    
+    }
+    <span class="text-green">//订阅一个实体通知</span>
+    <span class="text-blue">public</span> async Task <span class="text-red">Subscribe_CommentPhoto</span>(int? tenantId, long userId, Guid photoId)
+    {
+        <span class="text-blue">await</span> _notificationSubscriptionManager<label class="label label-danger">.SubscribeAsync</label>(tenantId, userId, "<span class="text-red">CommentPhoto</span>", new EntityIdentifier(typeof(Photo), photoId));   
+    }
+}
+</pre>
+                    <p>
+                        首先，我们注入了<strong>INotificationSubscriptionManager</strong>。第一个方法订阅了一个一般通知。当某人发送了一个添加好友的请求时，用户想得到通知。第二个方法订阅了一个和特定实体（Photo）相关的通知。如果任何人对这个特定的图片进行了评论，那么用户就会收到通知。
+                        <br />每一个通知应该有<strong>唯一的名字</strong>（比如例子中的SentFrendshipRequest和 CommentPhoto）。
+                    </p>
+                </div>
+            </div>
+            <div class="box box-primary">
+                <div class="box-header with-border">
+                    <h3 class="box-title">发布通知</h3>
+                    <div class="box-tools pull-right">
+                        <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                            <i class="fa fa-minus"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="box-body">
+                    <p>
+                        <strong>INotificationPublisher</strong> 用于发布通知。例如：
+                    </p>
+                    <pre>
+public class MyService : ITransientDependency
+{
+    private readonly <label class="label label-danger">INotificationPublisher</label> _notiticationPublisher;
+    public MyService(INotificationPublisher notiticationPublisher)
+    {
+        _notiticationPublisher = notiticationPublisher;
+    }
+    <span class="text-green">//给特定的用户发送一个一般通知</span>
+    public async Task Publish_SentFrendshipRequest(string senderUserName, string friendshipMessage, long targetUserId)
+    {
+        await _notiticationPublisher<label class="label label-danger">.PublishAsync</label>("SentFrendshipRequest", new SentFrendshipRequestNotificationData(senderUserName, friendshipMessage), userIds: new[] { targetUserId });
+    }
+    <span class="text-green">//给特定的用户发送一个实体通知</span>
+    public async Task Publish_CommentPhoto(string commenterUserName, string comment, Guid photoId, long photoOwnerUserId)
+    {
+        await _notiticationPublisher<label class="label label-danger">.PublishAsync</label>("CommentPhoto", new CommentPhotoNotificationData(commenterUserName, comment), new EntityIdentifier(typeof(Photo), photoId), userIds: new[] { photoOwnerUserId });
+    }
+    <span class="text-green">//给具特定严重级别程度的所有订阅用户发送一个一般通知</span>
+    public async Task Publish_LowDisk(int remainingDiskInMb)
+    {
+        <span class="text-green">//例如 "LowDiskWarningMessage"的英文内容 -> "Attention! Only {remainingDiskInMb} MBs left on the disk!"</span>
+        var data = new LocalizableMessageNotificationData(new LocalizableString("LowDiskWarningMessage", "MyLocalizationSourceName"));
+        data["remainingDiskInMb"] = remainingDiskInMb;
+        await _notiticationPublisher<label class="label label-danger">.PublishAsync</label>("System.LowDisk", data, severity: NotificationSeverity.Warn);    
+    }
+}
+</pre>
+                </div>
+            </div>
+            <div class="box box-primary">
+                <div class="box-header with-border">
+                    <h3 class="box-title">实时通知</h3>
+                    <div class="box-tools pull-right">
+                        <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                            <i class="fa fa-minus"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="box-body">
+                    <p>
+                        通知系统使用了<strong>IRealTimeNotifier</strong>向用户发送实时通知。这可以使用任何类型的实时通讯系统来实现。SEP在一个单独的包中使用了 <strong>SignalR</strong>来实现。
+                        <br /><br />
+                        注意：通知系统在一个后台工作中异步调用<strong>IRealTimeNotifier</strong>。因此，通知发送时可能伴有轻微的延迟。
+                    <br /><br /><strong style="color:orange">客户端</strong>
+                        <hr style="margin-top:-5px;border-top: 1px solid orange;"/>
+                        当接收到一个实时通知时，ABP会在客户端触发一个<strong>全局的事件（global event）</strong>。你可以像下面那样注册来获取通知：
+                        <pre>
+abp.event.on('abp.notifications.received', function (userNotification) {
+    console.log(userNotification);
+});
+</pre>
+                        <strong>abp.notifications.received</strong>事件对于每个接收到的实时通知都会触发。你可以像上面那样注册该事件来获取通知。下面是接收到的通知消息的JSON数据：
+<pre class="text-red">
+{
+    "userId": 2,
+    "state": 0,
+    "notification": {
+        "notificationName": "System.LowDisk",
+        "data": {
+            "message": {
+                "sourceName": "MyLocalizationSourceName",
+                "name": "LowDiskWarningMessage"
+            },
+            "type": "Abp.Notifications.LocalizableMessageNotificationData",
+            "properties": {
+                "remainingDiskInMb": "42"
+            }
+        },
+        "entityType": null,
+        "entityTypeName": null,
+        "entityId": null,
+        "severity": 0,
+        "creationTime": "2016-02-09T17:03:32.13",
+        "id": "0263d581-3d8a-476b-8e16-4f6a6f10a632"
+    },
+    "id": "4a546baf-bf17-4924-b993-32e420a8d468"
+}
+</pre>
+                        不仅可以记录该通知。你还可以使用通知数据将通知信息展示给该用户。当接收到一个push通知时，你可以只使用一句代码来显示UI通知：
+<pre>
+abp.event.on('abp.notifications.received', function (userNotification) {
+    abp.notifications.showUiNotifyForUserNotification(userNotification);
+});
+</pre>
+</p>
+                </div>
+            </div>
+            <div class="box box-primary">
+                <div class="box-header with-border">
+                    <h3 class="box-title">举例</h3>
+                    <div class="box-tools pull-right">
+                        <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                            <i class="fa fa-minus"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="box-body">
+                    <p>下面是一个给指定用户的客户端实时发送推送通知的例子：</p>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="box box-default">
+                                <div class="box-header with-border">
+                                    <h3 class="box-title">用户列表</h3>
+                                    <div class="box-tools pull-right">
+                                    </div>
+                                </div>
+                                <div class="box-body no-padding">
+                                    <div class="mailbox-controls">
+                                        <button class="btn btn-default btn-sm checkbox-toggle" type="button">
+                                            <i class="fa fa-square-o"></i>
+                                        </button>
+                                        <span>全选</span>
+                                    </div>
+                                    <div class="table-responsive mailbox-messages">
+                                        <table class="table table-hover table-striped">
+                                            <tbody>
+                                                @foreach (var item in ViewBag.UserList as List<SEPInstance.Dto.OutputDto.Users.UserListDto>)
+                                                {
+                                                    <tr>
+                                                        <td title="@item.Id"><input type="checkbox"></td>
+                                                        <td class="mailbox-name">@item.Name</td>
+                                                    </tr>
+                                                }
+                                                <tr>
+                                                    <td colspan="2">
+                                                        <label id="UserIdList-error" class="error" style="display:none;">请选择用户！</label>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="box-footer no-padding">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="box box-default">
+                                <div class="box-header with-border">
+                                    <h3 class="box-title">消息内容</h3>
+                                </div>
+                                <form id="MessageForm" class="form-horizontal" action="@(Url.Action("SendMessage", "Notice"))" method="POST">
+                                    <input type="hidden" value="" id="UserIdList" name="UserIdList" required />
+                                    <div class="box-body">
+                                        <div class="form-group">
+                                            <div class="col-sm-12">
+                                                <textarea id="NoticeContent" name="NoticeContent" required class="form-control" rows="3" placeholder="请输入 ..."></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="box-footer">
+                                        <button type="button" id="ButtonSend" class="btn btn-info pull-right">发送</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+</section>
+
+@section Scripts{
+    <script type="text/javascript" src="~/Content/plugins/iCheck/icheck.min.js"></script>
+<script type="text/javascript">
+    
+  $(function () {
+    //加载选择按钮插件
+    $('.mailbox-messages input[type="checkbox"]').iCheck({
+      checkboxClass: 'icheckbox_flat-blue',
+      radioClass: 'iradio_flat-blue'
+    });
+
+    //全选checkbox切换
+    $(".checkbox-toggle").click(function () {
+      var clicks = $(this).data('clicks');
+      if (clicks) {
+          //取消选中全选
+          $(".mailbox-messages input[type='checkbox']").iCheck("uncheck");
+          $(".mailbox-messages input[type='checkbox']").removeAttr("checked");
+          $("#UserIdList").val("");//清空用户IdList
+        $(".fa", this).removeClass("fa-check-square-o").addClass('fa-square-o');
+      } else {
+          //选中全选
+          $("#UserIdList-error").hide();
+          $(".mailbox-messages input[type='checkbox']").iCheck("check");
+          $(".mailbox-messages input[type='checkbox']").attr("checked", "checked");
+          $("#UserIdList").val(",@ViewBag.IdList");
+        $(".fa", this).removeClass("fa-square-o").addClass('fa-check-square-o');
+      }
+      $(this).data("clicks", !clicks);
+    });
+      //单个点击用户时
+    $("ins").click(function (e) {
+        
+        if ($(this).parent().attr("aria-checked") == "true") {
+            $("#UserIdList-error").hide();
+            var id = "," + $(this).parents("td").attr("title");
+            var idList = $("#UserIdList").val()+id;
+            $("#UserIdList").val(idList);
+        }
+        else {
+            var id = "," + $(this).parents("td").attr("title");
+            var idList = $("#UserIdList").val();
+            $("#UserIdList").val(idList.replace(id,''));
+        }
+    });
+
+    $('#MessageForm').validate({
+        rules: {
+            UserIdList: {
+                required: true
+            },
+            NoticeContent: {
+                required: true
+            }
+        },
+        messages: {
+            UserIdList: {
+                required: "请选择用户！"
+            },
+            NoticeContent: {
+                required: "消息内容不能为空！"
+            }
+        }
+    })
+
+    $("#ButtonSend").click(function (e) {
+        if (!$("#MessageForm").valid())
+            return false;
+        e.preventDefault();
+        if ($("#UserIdList").val() == "") {
+            $("#UserIdList-error").show();
+            return false;
+        }
+        abp.ui.setBusy(
+            $('#MessageForm'),
+            abp.ajax({
+                url: abp.appPath + 'Notice/SendMessage',
+                type:'POST',
+                data:JSON.stringify({
+                    UserIdList: $("#UserIdList").val().substring(1, $("#UserIdList").val().length),
+                    NoticeContent:$("#NoticeContent").val()
+                })
+            }).done(function (data) {
+                              
+            }).fail(function(){
+                abp.notify.error("发送失败！");     
+            }))
+      
+    });
+  });
+</script>
+}

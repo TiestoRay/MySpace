@@ -1,0 +1,287 @@
+﻿@model List<SEPInstance.Dto.OutputDto.Citys.CityRedisDto>
+@{
+    ViewBag.Title = "redis管理";
+}
+
+<style>
+    .error {
+        color: red;
+    }
+
+    .form-body {
+        margin-top: 30px;
+    }
+</style>
+
+<div class="content-wrapper">
+    <section class="content-header">
+        <h1>
+            redis管理
+            <small>redis列表</small>
+        </h1>
+        @Html.BreadCrumb()
+    </section>
+    <section class="content">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="box box-primary">
+                    <div class="box-header with-border">
+                        <h3 class="box-title">介绍</h3>
+                        <div class="box-tools pull-right">
+                            <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                                <i class="fa fa-minus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="box-body">
+                        <p>
+                            Redis 是完全开源的，遵守BSD协议，是一个高性能的key-value数据库。
+                            <br /><br />
+                        </p>
+                            <strong style="color:orange;">特点</strong>
+                            <hr style="border-top:1px solid orange; margin-top:0px;" />
+                            <ul>
+                                <li>Redis支持数据的持久化，可以将内存中的数据保持在磁盘中，重启的时候可以再次加载进行使用。</li>
+                                <li>Redis不仅仅支持简单的key-value类型的数据，同时还提供list，set，zset，hash等数据结构的存储。</li>
+                                <li>Redis支持数据的备份，即master-slave模式的数据备份。</li>
+                            </ul>
+                            
+                            <strong style="color:orange;">优势</strong>
+                            <hr style="border-top:1px solid orange; margin-top:0px;" />
+                            <ul>
+                                <li>性能极高 – Redis能读的速度是110000次/s,写的速度是81000次/s 。</li>
+                                <li>丰富的数据类型 – Redis支持二进制案例的 Strings, Lists, Hashes, Sets 及 Ordered Sets 数据类型操作。</li>
+                                <li>原子 – Redis的所有操作都是原子性的，同时Redis还支持对几个操作全并后的原子性执行。</li>
+                                <li>丰富的特性 – Redis还支持 publish/subscribe, 通知, key 过期等等特性。</li>
+                            </ul>
+                        
+                    </div>
+                </div>
+                <div class="box box-primary">
+                    <div class="box-header with-border">
+                        <h3 class="box-title">使用</h3>
+                        <div class="box-tools pull-right">
+                            <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                                <i class="fa fa-minus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="box-body">
+                        <strong style="color:orange;">安装</strong>
+                        <hr style="border-top:1px solid orange; margin-top:0px;" />
+                        <p>
+                            下载地址：https://github.com/MSOpenTech/redis/releases。
+                            <br />将下载的redis拷到自定义盘符安装目录取名redis。 如 C:\reids打开一个cmd窗口 使用cd命令切换目录到 C:\redis 运行 redis-server.exe redis.conf。显示如下界面：
+                            <br /><img class="img-responsive" src="~/images/redis1.png" />
+                        </p>
+                        <strong style="color:orange;">举例</strong>
+                        <hr style="border-top:1px solid orange; margin-top:0px;" />
+                        <p>
+                            这时候另启一个cmd窗口，原来的不要关闭，不然就无法访问服务端了。
+                            <br />切换到redis目录下运行 redis-cli.exe -h 127.0.0.1 -p 6379 。
+                            <br />设置键值对 set myKey abc
+                            <br />取出键值对 get myKey
+                            <br /><img class="img-responsive" src="~/images/redis2.png" />
+                        </p>
+
+                    </div>
+                </div>
+                <div class="box box-primary">
+                    <div class="box-header with-border">
+                        <h3 class="box-title">SEP中的Redis</h3>
+                        <div class="box-tools pull-right">
+                            <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                                <i class="fa fa-minus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="box-body">
+                        <p>
+                            Redis类定义在SEP.Core核心层中，下面是RedisHelper类的定义和配置：
+                            <br /><img class="img-responsive" src="~/images/redis3.png" />
+                            <br />下面是获取Redis链接的操作：
+                            <br /><img class="img-responsive" src="~/images/redis4.png" />
+                            <br />下面是新增Key-Value的操作：
+                            <br /><img class="img-responsive" src="~/images/redis5.png" />
+                            <br />下面是获取Key-Value的操作：
+                            <br /><img class="img-responsive" src="~/images/redis6.png" />
+                            <br />下面是删除Key-Value的操作：
+                            <br /><img class="img-responsive" src="~/images/redis7.png" />
+                            <br />RedisHelper类还包括对链表和字符串的相关操作方法，可以到类中详细查看。
+
+                        </p>
+                        <strong style="color:orange;">Web.config配置</strong>
+                        <hr style="border-top:1px solid orange; margin-top:0px;" />
+                        <p>
+                            <img class="img-responsive" src="~/images/redis8.png" />
+                        </p>
+                    </div>
+                </div>
+                <div class="box box-primary">
+                    <div class="box-header with-border">
+                        <h3 class="box-title">举例</h3>
+                        <div class="box-tools pull-right">
+                            <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                                <i class="fa fa-minus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="box-body">
+                        <p>
+                            下面是通过Key-Value的方式对Redis中存储的数据进行的获取操作和新增操作，请使用。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-6">
+                <div class="box">
+                    <div class="box-body table-responsive">
+                        <table class="table table-bordered table-striped table-hover">
+                            <thead>
+                                <tr role="row">
+                                    <th>
+                                        id
+                                    </th>
+                                    <th>
+                                        名称
+                                    </th>
+                                    <th>
+                                        编号
+                                    </th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>@item.Id</td>
+                                        <td>@item.Name</td>
+                                        <td>@item.No</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 postform">
+                <div class="box">
+                    <div class="form-horizontal">
+                        <div class="form-body">
+                            @using (Html.BeginForm("Add", "Redis", FormMethod.Post, new { @id = "form", @class = "form-horizontal" }))
+                            {
+                                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                                <div class="form-group">
+                                    @Html.Label("城市id", htmlAttributes: new { @class = "control-label col-md-4" })
+                                    <div class="col-md-8">
+                                        @Html.TextBox("Id", "", new { htmlAttributes = new { @class = "form-control" } })
+
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.Label("城市名称", htmlAttributes: new { @class = "control-label col-md-4" })
+                                    <div class="col-md-8">
+                                        @Html.TextBox("Name", "", new { htmlAttributes = new { @class = "form-control" } })
+
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.Label("城市编号", htmlAttributes: new { @class = "control-label col-md-4" })
+                                    <div class="col-md-8">
+                                        @Html.TextBox("No", "", new { htmlAttributes = new { @class = "form-control" } })
+
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <div class="row">
+                                        <div class="col-sm-4 col-sm-offset-2">
+                                            <input type="button" value="新增" class="btn btn-primary btn-sm blue" id="subBtn" />
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+
+
+@section Scripts{
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#form").validate({
+                rules: {
+                    Id: {
+                        required: true,
+                        digits: true
+                    },
+                    Name: {
+                        required: true,
+                        maxlength: 100
+                    },
+                    No: {
+                        required: true,
+                        maxlength: 100
+                    }
+                },
+                messages: {
+                    Id: {
+                        required: "请输入id",
+                        digits: "Id必须为整数"
+                    },
+                    Name: {
+                        required: "请输入姓名",
+                        maxlength: "不能超过100个字"
+                    },
+                    No: {
+                        required: "请输入编号",
+                        maxlength: "不能超过100个字"
+                    }
+                }
+            });
+            $("#subBtn").click(function (e) {
+                if (!$("#form").valid())
+                    return false;
+                e.preventDefault();
+                var obj = JSON.stringify({
+                    Id: $("#Id").val(),
+                    Name: $("#Name").val(),
+                    No: $("#No").val()
+                })
+                console.log(obj);
+                abp.ui.setBusy($('.postform'), abp.ajax({
+                    url: "/Redis/AddList",
+                    data: obj,
+                    type: "Post",
+                    success: function (data) {
+                        swal(
+                               {
+                                   title: "添加成功",
+                                   text: "",
+                                   type: "success"
+                               },
+                               function (isConfirm) {
+                                   if (isConfirm) {
+                                       window.location.reload();
+                                   }
+                               }
+                           );
+                    },
+                    error: function (err) {
+                        console.log(err);
+                    }
+                }));
+            })
+        })
+    </script>
+}

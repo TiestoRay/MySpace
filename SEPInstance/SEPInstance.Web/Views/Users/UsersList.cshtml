@@ -1,0 +1,172 @@
+﻿@using Webdiyer.WebControls.Mvc
+@using SEPInstance.Authorization
+@model PagedList<SEPInstance.Dto.OutputDto.Users.UserListDto>
+
+@{
+    ViewBag.Title = "用户列表";
+}
+
+<style>
+    table a, .table a {
+        text-decoration: none;
+    }
+
+    .form-control {
+        height: 33px;
+    }
+</style>
+<section class="content-header">
+    <h1>用户管理</h1>
+    @if (Html.HasAuthorization(PermissionNames.Pages_Users_List_BreadCrumb))
+    {
+        @Html.BreadCrumb()
+    }
+</section>
+<section class="content">
+    <div class="box">
+        <div class="box-header">
+            @using (Html.BeginForm("UsersList", "Users", FormMethod.Get, new { @class = "form-inline" }))
+            {
+                <div class="form-group">
+
+                    <label>搜索关键字：</label>
+
+                    <input type="text" placeholder="关键字" name="KeyWord" value="@Request.QueryString["KeyWord"]" style="width:200px" class="form-control" />
+                </div>
+                <input type="submit" value="检 索" accesskey="S" class="btn btn-info btn-sm" />
+
+
+
+                <div class="pull-right">
+                    @if (Html.HasAuthorization(PermissionNames.Pages_Users_Add))
+                    {
+                        <a href="~/Users/AddUser" class="btn btn-primary btn-sm" style="float:right;">
+                            <i class="fa fa-plus"></i> 新增用户
+                        </a>
+                    }
+
+                </div>
+            }
+        </div>
+        <div class="box-body table-responsive table-striped table-hover">
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Name)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.UserName)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.EmailAddress)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.LastLoginTime)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.CreationTime)
+                        </th>
+                        @if (Html.HasAuthorization(new string[] { PermissionNames.Pages_Users_Edit, PermissionNames.Pages_Users_Del, PermissionNames.Pages_Users_Role }))
+                        {
+                            <th>操作</th>
+                        }
+
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Name)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.UserName)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.EmailAddress)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.LastLoginTime)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.CreationTime)
+                            </td>
+                            @if (Html.HasAuthorization(new string[] { PermissionNames.Pages_Users_Edit, PermissionNames.Pages_Users_Del, PermissionNames.Pages_Users_Role }))
+                            {
+                                <td>
+                                    @if (Html.HasAuthorization(PermissionNames.Pages_Users_Edit))
+                                    {
+                                        @Html.ActionLink("编辑", "EditUser", new { id = item.Id }, new { @class = "btn btn-info btn-xs" })
+                                    }
+                                    @if (Html.HasAuthorization(PermissionNames.Pages_Users_Del))
+                                    {
+                                        <button type="button" class="btn btn-danger btn-xs" onclick="deleteUser(@item.Id)"><i class="fa fa-trash-o"></i> 删除</button>
+                                    }
+                                    @if (Html.HasAuthorization(PermissionNames.Pages_Users_Role))
+                                    {
+                                        @Html.ActionLink("角色分配", "UserRole", new { id = item.Id }, new { @class = "btn btn-warning btn-xs" })
+                                    }
+                                </td>
+                            }
+                        </tr>
+                    }
+                </tbody>
+            </table>
+            @if (Html.HasAuthorization(PermissionNames.Pages_Users_List_Pager))
+            {
+                @Html.Pager(Model,
+                new PagerOptions
+                {
+                    PageIndexParameterName = "PageIndex",
+                    NumericPagerItemCount = 5,
+                    ContainerTagName = "ul",
+                    CssClass = "pagination",
+                    CurrentPagerItemTemplate = "<li class=\"active\"><a href=\"#\">{0}</a></li>",
+                    DisabledPagerItemTemplate = "<li class=\"disabled\"><a>{0}</a></li>",
+                    PagerItemTemplate = "<li>{0}</li>",
+                    Id = "bootstrappager2",
+                    PageIndexBoxId = "pageIndexBox",
+                    GoToButtonId = "goToBtn"
+                })
+            }
+        </div>
+    </div>
+
+
+</section>
+@section Scripts{
+    <script type="text/javascript">
+        function deleteUser(id) {
+            abp.message.confirm("", "确定要删除该用户吗？", function (isConfirmed) {
+                if (isConfirmed) {
+                    abp.ui.setBusy("",
+                        abp.ajax({
+                            url: "/Users/DeleteUser",
+                            data: { id: id },
+                            dataType: "json",
+                            contentType: "application/x-www-form-urlencoded",
+                            success: function (data) {
+                                swal(
+                                       {
+                                           title: "删除成功",
+                                           text: "",
+                                           type: "success"
+                                       },
+                                       function (isConfirm) {
+                                           if (isConfirm) {
+                                               window.location.reload();
+                                           }
+                                       }
+                                   );
+                            }
+                        })
+                        );
+                }
+            })
+            return false;
+        }
+    </script>
+}

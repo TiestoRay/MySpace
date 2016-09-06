@@ -1,0 +1,131 @@
+﻿@model SEPInstance.Dto.InputDto.Users.EditUserInput
+@{
+    ViewBag.Title = "编辑用户";
+}
+<style>
+    .error {
+        color: red;
+    }
+</style>
+<div class="box box-primary" style="margin-top:30px;">
+    <div class="box-header with-border">
+        <h3 class="box-title">编辑用户</h3>
+
+        @Html.BreadCrumb()
+
+    </div>
+    @using (Html.BeginForm("EditUser", "Users", FormMethod.Post, new { @id = "form" }))
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-horizontal">
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            @Html.HiddenFor(model => model.UserId)
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.UserName, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-8">
+                    @Html.DisplayFor(model => model.UserName, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.UserName, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-8">
+                    @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-8">
+                    @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="form-group">
+                    <div class="col-sm-10">
+                        <input type="button" value="保存" class="btn btn-primary btn-sm blue" id="subBtn" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
+</div>
+@section Scripts{
+    <script type="text/javascript">
+        $(document).ready(function () {
+           window.validator= $("#form").validate({
+                rules: {
+                    Name: {
+                        required: true,
+                        maxlength: 100
+                    },
+                    Email: {
+                        required: true,
+                        maxlength: 100,
+                        email: true,
+                        remote: {
+                            type: "POST",
+                            url: "/Users/RemoteCheckEmailExist",             //邮箱是否存在
+                            data: {
+                                EmailAddress: function () { return $("#EmailAddress").val(); },
+                                UserId: function () { return $("#UserId").val(); }
+                            }
+                        }
+                    }
+                },
+                messages: {
+                    Name: {
+                        required: "请输入姓名",
+                        maxlength: "最多100位"
+                    },
+                    Email: {
+                        required: "请输入邮箱",
+                        maxlength: "最多100位",
+                        email: "邮箱地址不合法",
+                        remote: "该邮箱地址已存在"
+                    }
+                }
+            });
+             
+           $("#subBtn").click(function (e) {
+                
+                if (!$("#form").valid())
+                    return false;
+                e.preventDefault();
+                abp.ui.setBusy($('form'), abp.ajax({
+                    url: "/Users/EditUser",
+                    data: JSON.stringify({
+                        UserId: $("#UserId").val(),
+                        UserName: $("#UserName").val(),
+                        Name: $("#Name").val(),
+                        Email: $("#Email").val()
+                    }),
+                    success: function (data) {
+                        swal(
+                                {
+                                    title: "修改成功",
+                                    text: "",
+                                    type:"success"
+                                },
+                                function (isConfirm) {
+                                    if (isConfirm) {
+                                        window.location.reload();
+                                    }
+                                }
+                            );
+                    },
+                    error: function (err) {
+                        abp.message.error("修改失败")
+                    }
+                }));
+
+            })
+        })
+    </script>
+}
