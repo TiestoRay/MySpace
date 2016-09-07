@@ -5996,3 +5996,823 @@ DEBUG 2016-09-07 09:58:42,687 [1    ] Abp.Modules.AbpModuleManager             -
 DEBUG 2016-09-07 09:58:42,692 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
 DEBUG 2016-09-07 09:58:43,617 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: SEPInstance.EntityFramework.SEPInstanceDbContext, SEPInstance.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 DEBUG 2016-09-07 09:58:43,938 [1    ] Abp.Localization.LocalizationManager     - Localization disabled.
+DEBUG 2016-09-07 10:27:28,615 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-09-07 10:27:28,631 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2016-09-07 10:27:28,636 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.Web.SEPInstanceWebModule, SEPInstance.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 10:27:28,639 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.SEPInstanceDataModule, SEPInstance.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 10:27:28,639 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.11.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 10:27:28,640 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.11.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 10:27:28,640 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 10:27:28,640 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 10:27:28,641 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.SEPInstanceCoreModule, SEPInstance.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 10:27:28,641 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.SEPInstanceIDaoModule, SEPInstance.IDao, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 10:27:28,641 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.SEPInstanceApplicationModule, SEPInstance.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 10:27:28,641 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 10:27:28,641 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.SEPInstanceDtoModule, SEPInstance.Dto, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 10:27:28,641 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.Api.SEPInstanceWebApiModule, SEPInstance.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 10:27:28,641 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 10:27:28,642 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 10:27:28,642 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 10:27:28,642 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 10:27:28,642 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 10:27:28,645 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2016-09-07 10:27:29,219 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: SEPInstance.EntityFramework.SEPInstanceDbContext, SEPInstance.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 10:27:30,451 [1    ] Abp.Localization.LocalizationManager     - Localization disabled.
+DEBUG 2016-09-07 10:27:46,022 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2016-09-07 10:27:46,268 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 9 classes defines auto mapping attributes
+DEBUG 2016-09-07 10:27:46,268 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2016-09-07 10:27:46,272 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.OutputDto.Users.UserListDto
+DEBUG 2016-09-07 10:27:46,272 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.OutputDto.Roles.RoleListDto
+DEBUG 2016-09-07 10:27:46,272 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.OutputDto.Log.LogListDto
+DEBUG 2016-09-07 10:27:46,273 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.InputDto.Users.CreateUserInput
+DEBUG 2016-09-07 10:27:46,273 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.InputDto.Sessions.TenantLoginInfoDto
+DEBUG 2016-09-07 10:27:46,273 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.InputDto.Sessions.UserLoginInfoDto
+DEBUG 2016-09-07 10:27:46,273 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.InputDto.Roles.CreateRoleInput
+DEBUG 2016-09-07 10:27:46,273 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.InputDto.Roles.EditRoleInput
+DEBUG 2016-09-07 10:27:48,750 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.ICacheAppService' with service name 'app/cache'.
+DEBUG 2016-09-07 10:27:48,751 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.ILogAppService' with service name 'app/log'.
+DEBUG 2016-09-07 10:27:48,752 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.INotificationAppService' with service name 'app/notification'.
+DEBUG 2016-09-07 10:27:48,753 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.IRedisAppService' with service name 'app/redis'.
+DEBUG 2016-09-07 10:27:48,754 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.IRoleAppService' with service name 'app/role'.
+DEBUG 2016-09-07 10:27:48,755 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.IUserAppService' with service name 'app/user'.
+DEBUG 2016-09-07 10:28:00,291 [8    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"ea6dbbf2-168d-42e7-b759-f9c44337bd57","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2016-09-07T10:28:00.2849781+08:00","Properties":{}}
+DEBUG 2016-09-07 10:28:00,327 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: ea6dbbf2-168d-42e7-b759-f9c44337bd57
+DEBUG 2016-09-07 10:28:11,353 [8    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: ea6dbbf2-168d-42e7-b759-f9c44337bd57
+DEBUG 2016-09-07 10:28:12,066 [8    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"54bffb25-ff1c-45af-a6f9-7c2ce2028d80","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2016-09-07T10:28:12.0663172+08:00","Properties":{}}
+DEBUG 2016-09-07 10:28:12,072 [9    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 54bffb25-ff1c-45af-a6f9-7c2ce2028d80
+DEBUG 2016-09-07 10:28:20,617 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 54bffb25-ff1c-45af-a6f9-7c2ce2028d80
+DEBUG 2016-09-07 10:28:21,285 [8    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"5a40848e-3c3c-4e6b-8fb8-0ac0f71d6a63","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2016-09-07T10:28:21.2842993+08:00","Properties":{}}
+DEBUG 2016-09-07 10:28:21,292 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 5a40848e-3c3c-4e6b-8fb8-0ac0f71d6a63
+DEBUG 2016-09-07 10:28:26,114 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 5a40848e-3c3c-4e6b-8fb8-0ac0f71d6a63
+DEBUG 2016-09-07 10:28:26,725 [11   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"1cf56971-a8df-4ad2-8688-82cf4ebf47df","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2016-09-07T10:28:26.7258977+08:00","Properties":{}}
+DEBUG 2016-09-07 10:28:26,730 [15   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 1cf56971-a8df-4ad2-8688-82cf4ebf47df
+DEBUG 2016-09-07 10:28:30,750 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 1cf56971-a8df-4ad2-8688-82cf4ebf47df
+DEBUG 2016-09-07 10:28:31,163 [11   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"76af7def-3335-424e-8378-c84ef952e83c","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2016-09-07T10:28:31.1629741+08:00","Properties":{}}
+DEBUG 2016-09-07 10:28:31,168 [17   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 76af7def-3335-424e-8378-c84ef952e83c
+DEBUG 2016-09-07 10:28:34,719 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 76af7def-3335-424e-8378-c84ef952e83c
+DEBUG 2016-09-07 10:28:35,317 [7    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"a1d51ba9-4e97-4a33-b346-55fdd2b80461","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2016-09-07T10:28:35.3164507+08:00","Properties":{}}
+DEBUG 2016-09-07 10:28:35,322 [15   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: a1d51ba9-4e97-4a33-b346-55fdd2b80461
+DEBUG 2016-09-07 10:28:42,371 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: a1d51ba9-4e97-4a33-b346-55fdd2b80461
+DEBUG 2016-09-07 10:28:42,744 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"5fa32ea1-607d-4651-aa89-1836c236b5ba","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2016-09-07T10:28:42.7444545+08:00","Properties":{}}
+DEBUG 2016-09-07 10:28:42,750 [8    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 5fa32ea1-607d-4651-aa89-1836c236b5ba
+DEBUG 2016-09-07 10:31:48,207 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-09-07 10:31:48,223 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2016-09-07 10:31:48,229 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.Web.SEPInstanceWebModule, SEPInstance.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 10:31:48,232 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.SEPInstanceDataModule, SEPInstance.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 10:31:48,232 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.11.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 10:31:48,232 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.11.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 10:31:48,233 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 10:31:48,233 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 10:31:48,233 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.SEPInstanceCoreModule, SEPInstance.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 10:31:48,233 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.SEPInstanceIDaoModule, SEPInstance.IDao, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 10:31:48,233 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.SEPInstanceApplicationModule, SEPInstance.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 10:31:48,234 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 10:31:48,234 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.SEPInstanceDtoModule, SEPInstance.Dto, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 10:31:48,234 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.Api.SEPInstanceWebApiModule, SEPInstance.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 10:31:48,234 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 10:31:48,234 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 10:31:48,234 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 10:31:48,235 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 10:31:48,235 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 10:31:48,238 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2016-09-07 10:31:48,904 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: SEPInstance.EntityFramework.SEPInstanceDbContext, SEPInstance.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 10:31:50,188 [1    ] Abp.Localization.LocalizationManager     - Localization disabled.
+DEBUG 2016-09-07 10:31:52,753 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2016-09-07 10:31:53,002 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 9 classes defines auto mapping attributes
+DEBUG 2016-09-07 10:31:53,002 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2016-09-07 10:31:53,006 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.OutputDto.Users.UserListDto
+DEBUG 2016-09-07 10:31:53,006 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.OutputDto.Roles.RoleListDto
+DEBUG 2016-09-07 10:31:53,007 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.OutputDto.Log.LogListDto
+DEBUG 2016-09-07 10:31:53,007 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.InputDto.Users.CreateUserInput
+DEBUG 2016-09-07 10:31:53,007 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.InputDto.Sessions.TenantLoginInfoDto
+DEBUG 2016-09-07 10:31:53,007 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.InputDto.Sessions.UserLoginInfoDto
+DEBUG 2016-09-07 10:31:53,007 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.InputDto.Roles.CreateRoleInput
+DEBUG 2016-09-07 10:31:53,007 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.InputDto.Roles.EditRoleInput
+DEBUG 2016-09-07 10:31:55,411 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.ICacheAppService' with service name 'app/cache'.
+DEBUG 2016-09-07 10:31:55,413 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.ILogAppService' with service name 'app/log'.
+DEBUG 2016-09-07 10:31:55,414 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.INotificationAppService' with service name 'app/notification'.
+DEBUG 2016-09-07 10:31:55,415 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.IRedisAppService' with service name 'app/redis'.
+DEBUG 2016-09-07 10:31:55,417 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.IRoleAppService' with service name 'app/role'.
+DEBUG 2016-09-07 10:31:55,418 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.IUserAppService' with service name 'app/user'.
+DEBUG 2016-09-07 10:32:06,980 [7    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"8e9b1e38-ada9-405f-8efb-e7de7acccd2c","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2016-09-07T10:32:06.973428+08:00","Properties":{}}
+DEBUG 2016-09-07 10:32:07,030 [7    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 8e9b1e38-ada9-405f-8efb-e7de7acccd2c
+DEBUG 2016-09-07 10:33:28,661 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 8e9b1e38-ada9-405f-8efb-e7de7acccd2c
+DEBUG 2016-09-07 10:33:30,474 [14   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"80d8cef5-6ba3-4ad1-a56e-25b61374ffb5","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2016-09-07T10:33:30.4743823+08:00","Properties":{}}
+DEBUG 2016-09-07 10:33:30,483 [11   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 80d8cef5-6ba3-4ad1-a56e-25b61374ffb5
+DEBUG 2016-09-07 10:33:35,014 [11   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 80d8cef5-6ba3-4ad1-a56e-25b61374ffb5
+DEBUG 2016-09-07 10:33:36,718 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"198069a3-5b67-401b-994e-8fb577656967","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2016-09-07T10:33:36.7174502+08:00","Properties":{}}
+DEBUG 2016-09-07 10:33:36,727 [13   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 198069a3-5b67-401b-994e-8fb577656967
+DEBUG 2016-09-07 10:33:39,643 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 198069a3-5b67-401b-994e-8fb577656967
+DEBUG 2016-09-07 10:33:41,068 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"b1e9b422-7a70-4094-a7cd-ba99732e7717","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2016-09-07T10:33:41.0673939+08:00","Properties":{}}
+DEBUG 2016-09-07 10:33:41,108 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: b1e9b422-7a70-4094-a7cd-ba99732e7717
+DEBUG 2016-09-07 10:33:43,523 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: b1e9b422-7a70-4094-a7cd-ba99732e7717
+DEBUG 2016-09-07 10:33:44,954 [8    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"24d2df75-8add-4cd2-8986-5a135edddc50","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2016-09-07T10:33:44.9542153+08:00","Properties":{}}
+DEBUG 2016-09-07 10:33:44,962 [13   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 24d2df75-8add-4cd2-8986-5a135edddc50
+DEBUG 2016-09-07 10:33:46,548 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 24d2df75-8add-4cd2-8986-5a135edddc50
+DEBUG 2016-09-07 10:33:48,054 [18   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"f18a1f94-c03c-4a59-8a8c-b4736041f73e","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2016-09-07T10:33:48.0534932+08:00","Properties":{}}
+DEBUG 2016-09-07 10:33:48,108 [19   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: f18a1f94-c03c-4a59-8a8c-b4736041f73e
+DEBUG 2016-09-07 10:35:40,298 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-09-07 10:35:40,314 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2016-09-07 10:35:40,320 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.Web.SEPInstanceWebModule, SEPInstance.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 10:35:40,322 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.SEPInstanceDataModule, SEPInstance.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 10:35:40,322 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.11.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 10:35:40,323 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.11.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 10:35:40,323 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 10:35:40,323 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 10:35:40,323 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.SEPInstanceCoreModule, SEPInstance.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 10:35:40,324 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.SEPInstanceIDaoModule, SEPInstance.IDao, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 10:35:40,324 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.SEPInstanceApplicationModule, SEPInstance.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 10:35:40,324 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 10:35:40,324 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.SEPInstanceDtoModule, SEPInstance.Dto, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 10:35:40,324 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.Api.SEPInstanceWebApiModule, SEPInstance.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 10:35:40,324 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 10:35:40,324 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 10:35:40,325 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 10:35:40,325 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 10:35:40,325 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 10:35:40,328 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2016-09-07 10:35:40,918 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: SEPInstance.EntityFramework.SEPInstanceDbContext, SEPInstance.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 10:35:42,183 [1    ] Abp.Localization.LocalizationManager     - Localization disabled.
+DEBUG 2016-09-07 10:35:47,020 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2016-09-07 10:35:47,264 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 9 classes defines auto mapping attributes
+DEBUG 2016-09-07 10:35:47,264 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2016-09-07 10:35:47,268 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.OutputDto.Users.UserListDto
+DEBUG 2016-09-07 10:35:47,268 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.OutputDto.Roles.RoleListDto
+DEBUG 2016-09-07 10:35:47,268 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.OutputDto.Log.LogListDto
+DEBUG 2016-09-07 10:35:47,268 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.InputDto.Users.CreateUserInput
+DEBUG 2016-09-07 10:35:47,269 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.InputDto.Sessions.TenantLoginInfoDto
+DEBUG 2016-09-07 10:35:47,269 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.InputDto.Sessions.UserLoginInfoDto
+DEBUG 2016-09-07 10:35:47,269 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.InputDto.Roles.CreateRoleInput
+DEBUG 2016-09-07 10:35:47,269 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.InputDto.Roles.EditRoleInput
+DEBUG 2016-09-07 10:35:49,728 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.ICacheAppService' with service name 'app/cache'.
+DEBUG 2016-09-07 10:35:49,730 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.ILogAppService' with service name 'app/log'.
+DEBUG 2016-09-07 10:35:49,731 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.INotificationAppService' with service name 'app/notification'.
+DEBUG 2016-09-07 10:35:49,732 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.IRedisAppService' with service name 'app/redis'.
+DEBUG 2016-09-07 10:35:49,733 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.IRoleAppService' with service name 'app/role'.
+DEBUG 2016-09-07 10:35:49,734 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.IUserAppService' with service name 'app/user'.
+DEBUG 2016-09-07 10:36:02,078 [7    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"dff1a57f-3a8c-4b4f-b1ae-1be725e9db67","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2016-09-07T10:36:02.071798+08:00","Properties":{}}
+DEBUG 2016-09-07 10:36:02,119 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: dff1a57f-3a8c-4b4f-b1ae-1be725e9db67
+DEBUG 2016-09-07 10:42:04,848 [7    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: dff1a57f-3a8c-4b4f-b1ae-1be725e9db67
+DEBUG 2016-09-07 10:42:06,575 [9    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"79dba343-09e3-46f6-8bb1-e1ef7e8e0742","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2016-09-07T10:42:06.5745377+08:00","Properties":{}}
+DEBUG 2016-09-07 10:42:06,588 [20   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 79dba343-09e3-46f6-8bb1-e1ef7e8e0742
+DEBUG 2016-09-07 11:07:22,337 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-09-07 11:07:22,353 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2016-09-07 11:07:22,358 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.Web.SEPInstanceWebModule, SEPInstance.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:07:22,360 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.SEPInstanceDataModule, SEPInstance.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:07:22,360 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.11.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:07:22,361 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.11.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:07:22,361 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:07:22,361 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:07:22,362 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.SEPInstanceCoreModule, SEPInstance.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:07:22,362 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.SEPInstanceIDaoModule, SEPInstance.IDao, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:07:22,362 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.SEPInstanceApplicationModule, SEPInstance.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:07:22,362 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:07:22,362 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.SEPInstanceDtoModule, SEPInstance.Dto, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:07:22,362 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.Api.SEPInstanceWebApiModule, SEPInstance.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:07:22,362 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:07:22,363 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:07:22,363 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:07:22,363 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:07:22,363 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:07:22,366 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2016-09-07 11:07:22,923 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: SEPInstance.EntityFramework.SEPInstanceDbContext, SEPInstance.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:07:24,117 [1    ] Abp.Localization.LocalizationManager     - Localization disabled.
+DEBUG 2016-09-07 11:07:29,852 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2016-09-07 11:07:30,101 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 9 classes defines auto mapping attributes
+DEBUG 2016-09-07 11:07:30,101 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2016-09-07 11:07:30,105 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.OutputDto.Users.UserListDto
+DEBUG 2016-09-07 11:07:30,105 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.OutputDto.Roles.RoleListDto
+DEBUG 2016-09-07 11:07:30,105 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.OutputDto.Log.LogListDto
+DEBUG 2016-09-07 11:07:30,105 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.InputDto.Users.CreateUserInput
+DEBUG 2016-09-07 11:07:30,106 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.InputDto.Sessions.TenantLoginInfoDto
+DEBUG 2016-09-07 11:07:30,106 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.InputDto.Sessions.UserLoginInfoDto
+DEBUG 2016-09-07 11:07:30,106 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.InputDto.Roles.CreateRoleInput
+DEBUG 2016-09-07 11:07:30,106 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.InputDto.Roles.EditRoleInput
+DEBUG 2016-09-07 11:07:32,645 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.ICacheAppService' with service name 'app/cache'.
+DEBUG 2016-09-07 11:07:32,646 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.ILogAppService' with service name 'app/log'.
+DEBUG 2016-09-07 11:07:32,647 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.INotificationAppService' with service name 'app/notification'.
+DEBUG 2016-09-07 11:07:32,648 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.IRedisAppService' with service name 'app/redis'.
+DEBUG 2016-09-07 11:07:32,649 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.IRoleAppService' with service name 'app/role'.
+DEBUG 2016-09-07 11:07:32,650 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.IUserAppService' with service name 'app/user'.
+DEBUG 2016-09-07 11:07:44,653 [11   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"c4af8130-52ca-4dd3-95c1-4fb710bd798d","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2016-09-07T11:07:44.6472284+08:00","Properties":{}}
+DEBUG 2016-09-07 11:07:44,693 [9    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: c4af8130-52ca-4dd3-95c1-4fb710bd798d
+DEBUG 2016-09-07 11:09:55,946 [9    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: c4af8130-52ca-4dd3-95c1-4fb710bd798d
+DEBUG 2016-09-07 11:09:56,817 [10   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"7ef5fa10-751e-424c-ab9d-e62ee7333114","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2016-09-07T11:09:56.8163213+08:00","Properties":{}}
+DEBUG 2016-09-07 11:09:56,824 [10   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 7ef5fa10-751e-424c-ab9d-e62ee7333114
+DEBUG 2016-09-07 11:19:26,770 [31   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 7ef5fa10-751e-424c-ab9d-e62ee7333114
+DEBUG 2016-09-07 11:20:59,786 [7    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"4aaf3bba-54ca-4a59-9988-c537f0dec0ba","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2016-09-07T11:20:59.7852284+08:00","Properties":{}}
+DEBUG 2016-09-07 11:20:59,796 [38   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 4aaf3bba-54ca-4a59-9988-c537f0dec0ba
+DEBUG 2016-09-07 11:21:18,540 [9    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 4aaf3bba-54ca-4a59-9988-c537f0dec0ba
+DEBUG 2016-09-07 11:21:19,347 [8    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"f289213a-c7a6-4a9d-b7cd-3e2fadf147d3","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2016-09-07T11:21:19.3474065+08:00","Properties":{}}
+DEBUG 2016-09-07 11:21:19,355 [37   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: f289213a-c7a6-4a9d-b7cd-3e2fadf147d3
+DEBUG 2016-09-07 11:21:21,723 [9    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: f289213a-c7a6-4a9d-b7cd-3e2fadf147d3
+DEBUG 2016-09-07 11:21:22,350 [7    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"52f26cc1-31b2-40c7-9a37-df664b3a3fb4","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2016-09-07T11:21:22.3504945+08:00","Properties":{}}
+DEBUG 2016-09-07 11:21:22,356 [14   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 52f26cc1-31b2-40c7-9a37-df664b3a3fb4
+DEBUG 2016-09-07 11:21:23,508 [9    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 52f26cc1-31b2-40c7-9a37-df664b3a3fb4
+DEBUG 2016-09-07 11:21:23,919 [8    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"f5f863a5-a434-45ea-949f-a0c6a83f6aa8","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2016-09-07T11:21:23.9190361+08:00","Properties":{}}
+DEBUG 2016-09-07 11:21:23,930 [41   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: f5f863a5-a434-45ea-949f-a0c6a83f6aa8
+DEBUG 2016-09-07 11:28:18,348 [9    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: f5f863a5-a434-45ea-949f-a0c6a83f6aa8
+DEBUG 2016-09-07 11:28:19,258 [36   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"bba25197-eff2-4faa-99ec-90306f37e23b","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2016-09-07T11:28:19.2571929+08:00","Properties":{}}
+DEBUG 2016-09-07 11:28:19,266 [7    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: bba25197-eff2-4faa-99ec-90306f37e23b
+DEBUG 2016-09-07 11:37:15,815 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-09-07 11:37:15,833 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2016-09-07 11:37:15,839 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.Web.SEPInstanceWebModule, SEPInstance.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:37:15,842 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.SEPInstanceDataModule, SEPInstance.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:37:15,842 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.11.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:37:15,842 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.11.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:37:15,842 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:37:15,843 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:37:15,843 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.SEPInstanceCoreModule, SEPInstance.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:37:15,843 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.SEPInstanceIDaoModule, SEPInstance.IDao, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:37:15,843 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.SEPInstanceApplicationModule, SEPInstance.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:37:15,844 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:37:15,844 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.SEPInstanceDtoModule, SEPInstance.Dto, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:37:15,844 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.Api.SEPInstanceWebApiModule, SEPInstance.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:37:15,844 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:37:15,844 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:37:15,845 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:37:15,845 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:37:15,845 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:37:15,848 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2016-09-07 11:37:16,472 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: SEPInstance.EntityFramework.SEPInstanceDbContext, SEPInstance.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:37:30,745 [1    ] Abp.Localization.LocalizationManager     - Localization disabled.
+DEBUG 2016-09-07 11:37:31,209 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2016-09-07 11:37:31,450 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 9 classes defines auto mapping attributes
+DEBUG 2016-09-07 11:37:31,450 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2016-09-07 11:37:31,454 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.OutputDto.Users.UserListDto
+DEBUG 2016-09-07 11:37:31,454 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.OutputDto.Roles.RoleListDto
+DEBUG 2016-09-07 11:37:31,454 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.OutputDto.Log.LogListDto
+DEBUG 2016-09-07 11:37:31,454 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.InputDto.Users.CreateUserInput
+DEBUG 2016-09-07 11:37:31,455 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.InputDto.Sessions.TenantLoginInfoDto
+DEBUG 2016-09-07 11:37:31,455 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.InputDto.Sessions.UserLoginInfoDto
+DEBUG 2016-09-07 11:37:31,455 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.InputDto.Roles.CreateRoleInput
+DEBUG 2016-09-07 11:37:31,455 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.InputDto.Roles.EditRoleInput
+DEBUG 2016-09-07 11:37:33,902 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.ICacheAppService' with service name 'app/cache'.
+DEBUG 2016-09-07 11:37:33,904 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.ILogAppService' with service name 'app/log'.
+DEBUG 2016-09-07 11:37:33,905 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.INotificationAppService' with service name 'app/notification'.
+DEBUG 2016-09-07 11:37:33,906 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.IRedisAppService' with service name 'app/redis'.
+DEBUG 2016-09-07 11:37:33,907 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.IRoleAppService' with service name 'app/role'.
+DEBUG 2016-09-07 11:37:33,908 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.IUserAppService' with service name 'app/user'.
+DEBUG 2016-09-07 11:37:38,407 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"50531434-cadb-4f98-93b9-d8bd98d0af2f","IpAddress":"127.0.0.1","TenantId":1,"UserId":2,"ConnectTime":"2016-09-07T11:37:38.3538064+08:00","Properties":{}}
+ERROR 2016-09-07 11:38:07,747 [7    ] PInstance.Web.Controllers.HomeController - 执行处理程序“System.Web.Mvc.HttpHandlerUtil+ServerExecuteHttpHandlerAsyncWrapper”的子请求时出错。
+System.Web.HttpException (0x80004005): 执行处理程序“System.Web.Mvc.HttpHandlerUtil+ServerExecuteHttpHandlerAsyncWrapper”的子请求时出错。 ---> Abp.AbpException: There is no permission with name: Pages.Roles
+   在 Abp.Authorization.PermissionManager.GetPermission(String name) 位置 D:\Halil\GitHub\aspnetboilerplate\src\Abp\Authorization\PermissionManager.cs:行号 55
+   在 Abp.Authorization.Users.AbpUserManager`3.<IsGrantedAsync>d__43.MoveNext() 位置 D:\Halil\GitHub\module-zero\src\Abp.Zero\Authorization\Users\AbpUserManager.cs:行号 143
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.Authorization.PermissionChecker`3.<IsGrantedAsync>d__16.MoveNext() 位置 D:\Halil\GitHub\module-zero\src\Abp.Zero\Authorization\PermissionChecker.cs:行号 62
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.Threading.InternalAsyncHelper.<AwaitTaskWithPostActionAndFinallyAndGetResult>d__5`1.MoveNext() 位置 D:\Halil\GitHub\aspnetboilerplate\src\Abp\Threading\InternalAsyncHelper.cs:行号 120
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.Application.Navigation.UserNavigationManager.<FillUserMenuItems>d__16.MoveNext() 位置 D:\Halil\GitHub\aspnetboilerplate\src\Abp\Application\Navigation\UserNavigationManager.cs:行号 90
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.Application.Navigation.UserNavigationManager.<GetMenuAsync>d__13.MoveNext() 位置 D:\Halil\GitHub\aspnetboilerplate\src\Abp\Application\Navigation\UserNavigationManager.cs:行号 51
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException[TResult](Task`1 task)
+   在 Nito.AsyncEx.AsyncContext.<>c__DisplayClass7`1.<Run>b__5(Task`1 t)
+   在 System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException[TResult](Task`1 task)
+   在 Nito.AsyncEx.AsyncContext.Run[TResult](Func`1 action)
+   在 Abp.Threading.AsyncHelper.RunSync[TResult](Func`1 func) 位置 D:\Halil\GitHub\aspnetboilerplate\src\Abp\Threading\AsyncHelper.cs:行号 33
+   在 SEPInstance.Web.Controllers.LayoutController.TopMenu(String activeMenu) 位置 D:\Ray\gitResp\SEPInstance\SEPInstance.Web\Controllers\LayoutController.cs:行号 36
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Controller.<BeginExecuteCore>b__1d(IAsyncResult asyncResult, ExecuteCoreState innerState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Controller.<BeginExecute>b__15(IAsyncResult asyncResult, Controller controller)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(IAsyncResult asyncResult)
+   在 System.Web.Mvc.MvcHandler.<BeginProcessRequest>b__5(IAsyncResult asyncResult, ProcessRequestState innerState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   在 System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   在 System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerAsyncWrapper.<>c__DisplayClassa.<EndProcessRequest>b__9()
+   在 System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerWrapper.<>c__DisplayClass4.<Wrap>b__3()
+   在 System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerWrapper.Wrap[TResult](Func`1 func)
+   在 System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerWrapper.Wrap(Action action)
+   在 System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerAsyncWrapper.EndProcessRequest(IAsyncResult result)
+   在 System.Web.HttpServerUtility.ExecuteInternal(IHttpHandler handler, TextWriter writer, Boolean preserveForm, Boolean setPreviousPage, VirtualPath path, VirtualPath filePath, String physPath, Exception error, String queryStringOverride)
+   在 System.Web.HttpServerUtility.ExecuteInternal(IHttpHandler handler, TextWriter writer, Boolean preserveForm, Boolean setPreviousPage, VirtualPath path, VirtualPath filePath, String physPath, Exception error, String queryStringOverride)
+   在 System.Web.HttpServerUtility.Execute(IHttpHandler handler, TextWriter writer, Boolean preserveForm, Boolean setPreviousPage)
+   在 System.Web.HttpServerUtility.Execute(IHttpHandler handler, TextWriter writer, Boolean preserveForm)
+   在 System.Web.HttpServerUtilityWrapper.Execute(IHttpHandler handler, TextWriter writer, Boolean preserveForm)
+   在 System.Web.Mvc.Html.ChildActionExtensions.ActionHelper(HtmlHelper htmlHelper, String actionName, String controllerName, RouteValueDictionary routeValues, TextWriter textWriter)
+   在 System.Web.Mvc.Html.ChildActionExtensions.Action(HtmlHelper htmlHelper, String actionName, String controllerName, RouteValueDictionary routeValues)
+   在 System.Web.Mvc.Html.ChildActionExtensions.Action(HtmlHelper htmlHelper, String actionName, String controllerName, Object routeValues)
+   在 ASP._Page_Views_Shared__TopBar_cshtml.Execute() 位置 d:\Ray\gitResp\SEPInstance\SEPInstance.Web\Views\Shared\_TopBar.cshtml:行号 14
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.HtmlHelper.RenderPartialInternal(String partialViewName, ViewDataDictionary viewData, Object model, TextWriter writer, ViewEngineCollection viewEngineCollection)
+   在 System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)
+   在 System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName)
+   在 ASP._Page_Views_Shared__Layout_cshtml.Execute() 位置 d:\Ray\gitResp\SEPInstance\SEPInstance.Web\Views\Shared\_Layout.cshtml:行号 43
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.WebPages.WebPageBase.<>c__DisplayClass3.<RenderPageCore>b__2(TextWriter writer)
+   在 System.Web.WebPages.HelperResult.WriteTo(TextWriter writer)
+   在 System.Web.WebPages.WebPageBase.Write(HelperResult result)
+   在 System.Web.WebPages.WebPageBase.RenderSurrounding(String partialViewName, Action`1 body)
+   在 System.Web.WebPages.WebPageBase.PopContext()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+DEBUG 2016-09-07 11:38:07,748 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is reconnected: {"ConnectionId":"50531434-cadb-4f98-93b9-d8bd98d0af2f","IpAddress":"127.0.0.1","TenantId":1,"UserId":2,"ConnectTime":"2016-09-07T11:37:38.3538064+08:00","Properties":{}}
+DEBUG 2016-09-07 11:39:30,454 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-09-07 11:39:30,471 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2016-09-07 11:39:30,477 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.Web.SEPInstanceWebModule, SEPInstance.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:39:30,481 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.SEPInstanceDataModule, SEPInstance.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:39:30,481 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.11.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:39:30,481 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.11.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:39:30,481 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:39:30,482 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:39:30,482 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.SEPInstanceCoreModule, SEPInstance.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:39:30,482 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.SEPInstanceIDaoModule, SEPInstance.IDao, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:39:30,482 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.SEPInstanceApplicationModule, SEPInstance.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:39:30,483 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:39:30,483 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.SEPInstanceDtoModule, SEPInstance.Dto, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:39:30,483 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.Api.SEPInstanceWebApiModule, SEPInstance.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:39:30,483 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:39:30,483 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:39:30,483 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:39:30,484 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:39:30,484 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:39:30,487 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2016-09-07 11:39:31,179 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: SEPInstance.EntityFramework.SEPInstanceDbContext, SEPInstance.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:39:44,095 [1    ] Abp.Localization.LocalizationManager     - Localization disabled.
+DEBUG 2016-09-07 11:39:44,565 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2016-09-07 11:39:44,814 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 9 classes defines auto mapping attributes
+DEBUG 2016-09-07 11:39:44,814 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2016-09-07 11:39:44,818 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.OutputDto.Users.UserListDto
+DEBUG 2016-09-07 11:39:44,818 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.OutputDto.Roles.RoleListDto
+DEBUG 2016-09-07 11:39:44,818 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.OutputDto.Log.LogListDto
+DEBUG 2016-09-07 11:39:44,818 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.InputDto.Users.CreateUserInput
+DEBUG 2016-09-07 11:39:44,818 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.InputDto.Sessions.TenantLoginInfoDto
+DEBUG 2016-09-07 11:39:44,819 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.InputDto.Sessions.UserLoginInfoDto
+DEBUG 2016-09-07 11:39:44,819 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.InputDto.Roles.CreateRoleInput
+DEBUG 2016-09-07 11:39:44,819 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.InputDto.Roles.EditRoleInput
+DEBUG 2016-09-07 11:39:47,253 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.ICacheAppService' with service name 'app/cache'.
+DEBUG 2016-09-07 11:39:47,254 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.ILogAppService' with service name 'app/log'.
+DEBUG 2016-09-07 11:39:47,255 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.INotificationAppService' with service name 'app/notification'.
+DEBUG 2016-09-07 11:39:47,256 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.IRedisAppService' with service name 'app/redis'.
+DEBUG 2016-09-07 11:39:47,257 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.IRoleAppService' with service name 'app/role'.
+DEBUG 2016-09-07 11:39:47,258 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.IUserAppService' with service name 'app/user'.
+DEBUG 2016-09-07 11:39:51,766 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"223bc301-1218-453e-a737-8411e02b438e","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2016-09-07T11:39:51.7398325+08:00","Properties":{}}
+DEBUG 2016-09-07 11:39:58,580 [10   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"46a75c10-9e42-4932-b41b-60a8da59208f","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2016-09-07T11:39:58.5806992+08:00","Properties":{}}
+DEBUG 2016-09-07 11:39:58,609 [7    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 46a75c10-9e42-4932-b41b-60a8da59208f
+DEBUG 2016-09-07 11:40:10,800 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 46a75c10-9e42-4932-b41b-60a8da59208f
+DEBUG 2016-09-07 11:40:11,467 [7    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"b8876d70-bb45-4002-b334-23e9d2fb5dfa","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2016-09-07T11:40:11.4678523+08:00","Properties":{}}
+DEBUG 2016-09-07 11:40:11,473 [7    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: b8876d70-bb45-4002-b334-23e9d2fb5dfa
+DEBUG 2016-09-07 11:41:47,583 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-09-07 11:41:47,599 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2016-09-07 11:41:47,605 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.Web.SEPInstanceWebModule, SEPInstance.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:41:47,607 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.SEPInstanceDataModule, SEPInstance.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:41:47,607 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.11.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:41:47,608 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.11.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:41:47,608 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:41:47,609 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:41:47,610 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.SEPInstanceCoreModule, SEPInstance.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:41:47,610 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.SEPInstanceIDaoModule, SEPInstance.IDao, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:41:47,610 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.SEPInstanceApplicationModule, SEPInstance.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:41:47,611 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:41:47,611 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.SEPInstanceDtoModule, SEPInstance.Dto, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:41:47,611 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.Api.SEPInstanceWebApiModule, SEPInstance.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:41:47,612 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:41:47,612 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:41:47,612 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:41:47,613 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:41:47,613 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:41:47,617 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2016-09-07 11:41:48,260 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: SEPInstance.EntityFramework.SEPInstanceDbContext, SEPInstance.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:41:52,407 [1    ] Abp.Localization.LocalizationManager     - Localization disabled.
+DEBUG 2016-09-07 11:41:52,884 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2016-09-07 11:41:53,144 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 9 classes defines auto mapping attributes
+DEBUG 2016-09-07 11:41:53,144 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2016-09-07 11:41:53,148 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.OutputDto.Users.UserListDto
+DEBUG 2016-09-07 11:41:53,148 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.OutputDto.Roles.RoleListDto
+DEBUG 2016-09-07 11:41:53,148 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.OutputDto.Log.LogListDto
+DEBUG 2016-09-07 11:41:53,148 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.InputDto.Users.CreateUserInput
+DEBUG 2016-09-07 11:41:53,148 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.InputDto.Sessions.TenantLoginInfoDto
+DEBUG 2016-09-07 11:41:53,148 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.InputDto.Sessions.UserLoginInfoDto
+DEBUG 2016-09-07 11:41:53,148 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.InputDto.Roles.CreateRoleInput
+DEBUG 2016-09-07 11:41:53,149 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.InputDto.Roles.EditRoleInput
+DEBUG 2016-09-07 11:41:55,614 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.ICacheAppService' with service name 'app/cache'.
+DEBUG 2016-09-07 11:41:55,615 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.ILogAppService' with service name 'app/log'.
+DEBUG 2016-09-07 11:41:55,616 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.INotificationAppService' with service name 'app/notification'.
+DEBUG 2016-09-07 11:41:55,618 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.IRedisAppService' with service name 'app/redis'.
+DEBUG 2016-09-07 11:41:55,619 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.IRoleAppService' with service name 'app/role'.
+DEBUG 2016-09-07 11:41:55,620 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.IUserAppService' with service name 'app/user'.
+DEBUG 2016-09-07 11:49:48,590 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-09-07 11:49:48,606 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2016-09-07 11:49:48,611 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.Web.SEPInstanceWebModule, SEPInstance.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:49:48,613 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.SEPInstanceDataModule, SEPInstance.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:49:48,614 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.11.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:49:48,614 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.11.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:49:48,614 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:49:48,614 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:49:48,615 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.SEPInstanceCoreModule, SEPInstance.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:49:48,615 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.SEPInstanceIDaoModule, SEPInstance.IDao, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:49:48,615 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.SEPInstanceApplicationModule, SEPInstance.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:49:48,615 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:49:48,615 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.SEPInstanceDtoModule, SEPInstance.Dto, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:49:48,615 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.Api.SEPInstanceWebApiModule, SEPInstance.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:49:48,615 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:49:48,616 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:49:48,616 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:49:48,616 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:49:48,616 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:49:48,619 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2016-09-07 11:49:49,202 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: SEPInstance.EntityFramework.SEPInstanceDbContext, SEPInstance.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:49:50,414 [1    ] Abp.Localization.LocalizationManager     - Localization disabled.
+DEBUG 2016-09-07 11:49:50,879 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2016-09-07 11:49:51,131 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 9 classes defines auto mapping attributes
+DEBUG 2016-09-07 11:49:51,131 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2016-09-07 11:49:51,136 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.OutputDto.Users.UserListDto
+DEBUG 2016-09-07 11:49:51,136 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.OutputDto.Roles.RoleListDto
+DEBUG 2016-09-07 11:49:51,136 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.OutputDto.Log.LogListDto
+DEBUG 2016-09-07 11:49:51,136 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.InputDto.Users.CreateUserInput
+DEBUG 2016-09-07 11:49:51,136 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.InputDto.Sessions.TenantLoginInfoDto
+DEBUG 2016-09-07 11:49:51,136 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.InputDto.Sessions.UserLoginInfoDto
+DEBUG 2016-09-07 11:49:51,136 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.InputDto.Roles.CreateRoleInput
+DEBUG 2016-09-07 11:49:51,137 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.InputDto.Roles.EditRoleInput
+DEBUG 2016-09-07 11:49:53,480 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.ICacheAppService' with service name 'app/cache'.
+DEBUG 2016-09-07 11:49:53,481 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.ILogAppService' with service name 'app/log'.
+DEBUG 2016-09-07 11:49:53,482 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.INotificationAppService' with service name 'app/notification'.
+DEBUG 2016-09-07 11:49:53,483 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.IRedisAppService' with service name 'app/redis'.
+DEBUG 2016-09-07 11:49:53,484 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.IRoleAppService' with service name 'app/role'.
+DEBUG 2016-09-07 11:49:53,485 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.IUserAppService' with service name 'app/user'.
+DEBUG 2016-09-07 11:50:04,990 [10   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"18556012-fc23-4575-a55c-37ced61547a7","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2016-09-07T11:50:04.9791953+08:00","Properties":{}}
+DEBUG 2016-09-07 11:50:05,032 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 18556012-fc23-4575-a55c-37ced61547a7
+DEBUG 2016-09-07 11:50:22,556 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 18556012-fc23-4575-a55c-37ced61547a7
+DEBUG 2016-09-07 11:50:24,401 [11   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"30e70f5d-6f01-4cc6-9b44-162ebcf86fbf","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2016-09-07T11:50:24.3994662+08:00","Properties":{}}
+DEBUG 2016-09-07 11:50:24,442 [15   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 30e70f5d-6f01-4cc6-9b44-162ebcf86fbf
+DEBUG 2016-09-07 11:54:13,452 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-09-07 11:54:13,467 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2016-09-07 11:54:13,473 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.Web.SEPInstanceWebModule, SEPInstance.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:54:13,475 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.SEPInstanceDataModule, SEPInstance.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:54:13,475 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.11.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:54:13,475 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.11.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:54:13,475 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:54:13,476 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:54:13,476 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.SEPInstanceCoreModule, SEPInstance.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:54:13,476 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.SEPInstanceIDaoModule, SEPInstance.IDao, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:54:13,476 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.SEPInstanceApplicationModule, SEPInstance.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:54:13,477 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:54:13,477 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.SEPInstanceDtoModule, SEPInstance.Dto, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:54:13,477 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.Api.SEPInstanceWebApiModule, SEPInstance.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:54:13,477 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:54:13,477 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:54:13,477 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:54:13,478 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:54:13,478 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:54:13,480 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2016-09-07 11:54:14,046 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: SEPInstance.EntityFramework.SEPInstanceDbContext, SEPInstance.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:54:15,263 [1    ] Abp.Localization.LocalizationManager     - Localization disabled.
+DEBUG 2016-09-07 11:54:15,732 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2016-09-07 11:54:15,986 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 9 classes defines auto mapping attributes
+DEBUG 2016-09-07 11:54:15,986 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2016-09-07 11:54:15,990 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.OutputDto.Users.UserListDto
+DEBUG 2016-09-07 11:54:15,991 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.OutputDto.Roles.RoleListDto
+DEBUG 2016-09-07 11:54:15,991 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.OutputDto.Log.LogListDto
+DEBUG 2016-09-07 11:54:15,991 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.InputDto.Users.CreateUserInput
+DEBUG 2016-09-07 11:54:15,991 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.InputDto.Sessions.TenantLoginInfoDto
+DEBUG 2016-09-07 11:54:15,991 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.InputDto.Sessions.UserLoginInfoDto
+DEBUG 2016-09-07 11:54:15,991 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.InputDto.Roles.CreateRoleInput
+DEBUG 2016-09-07 11:54:15,992 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.InputDto.Roles.EditRoleInput
+DEBUG 2016-09-07 11:54:18,325 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.ICacheAppService' with service name 'app/cache'.
+DEBUG 2016-09-07 11:54:18,326 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.ILogAppService' with service name 'app/log'.
+DEBUG 2016-09-07 11:54:18,327 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.INotificationAppService' with service name 'app/notification'.
+DEBUG 2016-09-07 11:54:18,328 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.IRedisAppService' with service name 'app/redis'.
+DEBUG 2016-09-07 11:54:18,330 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.IRoleAppService' with service name 'app/role'.
+DEBUG 2016-09-07 11:54:18,331 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.IUserAppService' with service name 'app/user'.
+DEBUG 2016-09-07 11:54:22,884 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"a3850e55-a593-400b-81c8-87a0e59d2632","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2016-09-07T11:54:22.8286512+08:00","Properties":{}}
+DEBUG 2016-09-07 11:54:30,058 [7    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"06ccb533-1df0-45a4-9b5e-2517b36782bf","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2016-09-07T11:54:30.0579229+08:00","Properties":{}}
+DEBUG 2016-09-07 11:54:30,087 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 06ccb533-1df0-45a4-9b5e-2517b36782bf
+DEBUG 2016-09-07 11:54:52,447 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-09-07 11:54:52,744 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2016-09-07 11:54:52,749 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.Web.SEPInstanceWebModule, SEPInstance.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:54:52,751 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.SEPInstanceDataModule, SEPInstance.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:54:52,752 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.11.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:54:52,752 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.11.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:54:52,752 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:54:52,753 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:54:52,753 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.SEPInstanceCoreModule, SEPInstance.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:54:52,753 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.SEPInstanceIDaoModule, SEPInstance.IDao, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:54:52,753 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.SEPInstanceApplicationModule, SEPInstance.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:54:52,754 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:54:52,754 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.SEPInstanceDtoModule, SEPInstance.Dto, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:54:52,754 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.Api.SEPInstanceWebApiModule, SEPInstance.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:54:52,754 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:54:52,754 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:54:52,755 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:54:52,755 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:54:52,755 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:54:52,758 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2016-09-07 11:54:53,695 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: SEPInstance.EntityFramework.SEPInstanceDbContext, SEPInstance.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:54:54,012 [1    ] Abp.Localization.LocalizationManager     - Localization disabled.
+DEBUG 2016-09-07 11:54:54,537 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2016-09-07 11:54:54,760 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 9 classes defines auto mapping attributes
+DEBUG 2016-09-07 11:54:54,760 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2016-09-07 11:54:54,765 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.OutputDto.Users.UserListDto
+DEBUG 2016-09-07 11:54:54,765 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.OutputDto.Roles.RoleListDto
+DEBUG 2016-09-07 11:54:54,765 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.OutputDto.Log.LogListDto
+DEBUG 2016-09-07 11:54:54,765 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.InputDto.Users.CreateUserInput
+DEBUG 2016-09-07 11:54:54,765 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.InputDto.Sessions.TenantLoginInfoDto
+DEBUG 2016-09-07 11:54:54,765 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.InputDto.Sessions.UserLoginInfoDto
+DEBUG 2016-09-07 11:54:54,766 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.InputDto.Roles.CreateRoleInput
+DEBUG 2016-09-07 11:54:54,766 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.InputDto.Roles.EditRoleInput
+DEBUG 2016-09-07 11:54:57,149 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.ICacheAppService' with service name 'app/cache'.
+DEBUG 2016-09-07 11:54:57,151 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.ILogAppService' with service name 'app/log'.
+DEBUG 2016-09-07 11:54:57,152 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.INotificationAppService' with service name 'app/notification'.
+DEBUG 2016-09-07 11:54:57,154 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.IRedisAppService' with service name 'app/redis'.
+DEBUG 2016-09-07 11:54:57,155 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.IRoleAppService' with service name 'app/role'.
+DEBUG 2016-09-07 11:54:57,156 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.IUserAppService' with service name 'app/user'.
+DEBUG 2016-09-07 11:55:03,897 [10   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected (on reconnected event): {"ConnectionId":"a3850e55-a593-400b-81c8-87a0e59d2632","IpAddress":"127.0.0.1","TenantId":1,"UserId":2,"ConnectTime":"2016-09-07T11:55:03.8653934+08:00","Properties":{}}
+DEBUG 2016-09-07 11:55:03,897 [9    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected (on reconnected event): {"ConnectionId":"06ccb533-1df0-45a4-9b5e-2517b36782bf","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2016-09-07T11:55:03.8653934+08:00","Properties":{}}
+DEBUG 2016-09-07 11:55:07,784 [8    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"3d8fdffb-0364-4f50-99bc-b11f1d0a07c5","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2016-09-07T11:55:07.7841717+08:00","Properties":{}}
+DEBUG 2016-09-07 11:55:07,812 [9    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 3d8fdffb-0364-4f50-99bc-b11f1d0a07c5
+DEBUG 2016-09-07 11:55:10,225 [7    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 3d8fdffb-0364-4f50-99bc-b11f1d0a07c5
+DEBUG 2016-09-07 11:55:10,550 [8    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 06ccb533-1df0-45a4-9b5e-2517b36782bf
+DEBUG 2016-09-07 11:55:10,888 [8    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: a3850e55-a593-400b-81c8-87a0e59d2632
+DEBUG 2016-09-07 11:56:12,454 [13   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"d86ed517-831d-454b-a700-f295ce5f3ad9","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2016-09-07T11:56:12.4532736+08:00","Properties":{}}
+DEBUG 2016-09-07 11:56:12,464 [18   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: d86ed517-831d-454b-a700-f295ce5f3ad9
+DEBUG 2016-09-07 11:56:15,118 [7    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: d86ed517-831d-454b-a700-f295ce5f3ad9
+DEBUG 2016-09-07 11:56:16,135 [7    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"84036095-0725-4db6-b3e8-b835b0795aef","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2016-09-07T11:56:16.1358331+08:00","Properties":{}}
+DEBUG 2016-09-07 11:56:16,141 [25   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 84036095-0725-4db6-b3e8-b835b0795aef
+DEBUG 2016-09-07 11:57:25,066 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-09-07 11:57:25,397 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2016-09-07 11:57:25,403 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.Web.SEPInstanceWebModule, SEPInstance.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:57:25,406 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.SEPInstanceDataModule, SEPInstance.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:57:25,406 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.11.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:57:25,407 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.11.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:57:25,407 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:57:25,408 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:57:25,408 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.SEPInstanceCoreModule, SEPInstance.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:57:25,408 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.SEPInstanceIDaoModule, SEPInstance.IDao, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:57:25,409 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.SEPInstanceApplicationModule, SEPInstance.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:57:25,409 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:57:25,409 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.SEPInstanceDtoModule, SEPInstance.Dto, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:57:25,409 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.Api.SEPInstanceWebApiModule, SEPInstance.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:57:25,409 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:57:25,410 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:57:25,410 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:57:25,410 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:57:25,410 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:57:25,413 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2016-09-07 11:57:26,459 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: SEPInstance.EntityFramework.SEPInstanceDbContext, SEPInstance.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:57:26,786 [1    ] Abp.Localization.LocalizationManager     - Localization disabled.
+DEBUG 2016-09-07 11:57:27,383 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2016-09-07 11:57:27,611 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 9 classes defines auto mapping attributes
+DEBUG 2016-09-07 11:57:27,611 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2016-09-07 11:57:27,616 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.OutputDto.Users.UserListDto
+DEBUG 2016-09-07 11:57:27,616 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.OutputDto.Roles.RoleListDto
+DEBUG 2016-09-07 11:57:27,616 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.OutputDto.Log.LogListDto
+DEBUG 2016-09-07 11:57:27,616 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.InputDto.Users.CreateUserInput
+DEBUG 2016-09-07 11:57:27,616 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.InputDto.Sessions.TenantLoginInfoDto
+DEBUG 2016-09-07 11:57:27,616 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.InputDto.Sessions.UserLoginInfoDto
+DEBUG 2016-09-07 11:57:27,616 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.InputDto.Roles.CreateRoleInput
+DEBUG 2016-09-07 11:57:27,617 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.InputDto.Roles.EditRoleInput
+DEBUG 2016-09-07 11:57:29,888 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.ICacheAppService' with service name 'app/cache'.
+DEBUG 2016-09-07 11:57:29,890 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.ILogAppService' with service name 'app/log'.
+DEBUG 2016-09-07 11:57:29,891 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.INotificationAppService' with service name 'app/notification'.
+DEBUG 2016-09-07 11:57:29,892 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.IRedisAppService' with service name 'app/redis'.
+DEBUG 2016-09-07 11:57:29,893 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.IRoleAppService' with service name 'app/role'.
+DEBUG 2016-09-07 11:57:29,894 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.IUserAppService' with service name 'app/user'.
+DEBUG 2016-09-07 11:57:48,249 [9    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"bfba3f32-b75f-4846-a82e-2c0c90d3f18f","IpAddress":"127.0.0.1","TenantId":1,"UserId":2,"ConnectTime":"2016-09-07T11:57:48.2421706+08:00","Properties":{}}
+DEBUG 2016-09-07 11:57:48,302 [7    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: bfba3f32-b75f-4846-a82e-2c0c90d3f18f
+DEBUG 2016-09-07 11:58:06,524 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-09-07 11:58:06,817 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2016-09-07 11:58:06,823 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.Web.SEPInstanceWebModule, SEPInstance.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:58:06,826 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.SEPInstanceDataModule, SEPInstance.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:58:06,826 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.11.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:58:06,827 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.11.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:58:06,827 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:58:06,827 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:58:06,827 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.SEPInstanceCoreModule, SEPInstance.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:58:06,828 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.SEPInstanceIDaoModule, SEPInstance.IDao, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:58:06,828 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.SEPInstanceApplicationModule, SEPInstance.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:58:06,828 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:58:06,828 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.SEPInstanceDtoModule, SEPInstance.Dto, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:58:06,829 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.Api.SEPInstanceWebApiModule, SEPInstance.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:58:06,829 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:58:06,829 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:58:06,829 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:58:06,829 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:58:06,830 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:58:06,832 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2016-09-07 11:58:07,687 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: SEPInstance.EntityFramework.SEPInstanceDbContext, SEPInstance.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 11:58:07,955 [1    ] Abp.Localization.LocalizationManager     - Localization disabled.
+DEBUG 2016-09-07 11:58:08,467 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2016-09-07 11:58:08,732 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 9 classes defines auto mapping attributes
+DEBUG 2016-09-07 11:58:08,732 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2016-09-07 11:58:08,737 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.OutputDto.Users.UserListDto
+DEBUG 2016-09-07 11:58:08,737 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.OutputDto.Roles.RoleListDto
+DEBUG 2016-09-07 11:58:08,737 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.OutputDto.Log.LogListDto
+DEBUG 2016-09-07 11:58:08,737 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.InputDto.Users.CreateUserInput
+DEBUG 2016-09-07 11:58:08,737 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.InputDto.Sessions.TenantLoginInfoDto
+DEBUG 2016-09-07 11:58:08,738 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.InputDto.Sessions.UserLoginInfoDto
+DEBUG 2016-09-07 11:58:08,738 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.InputDto.Roles.CreateRoleInput
+DEBUG 2016-09-07 11:58:08,738 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.InputDto.Roles.EditRoleInput
+DEBUG 2016-09-07 11:58:11,083 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.ICacheAppService' with service name 'app/cache'.
+DEBUG 2016-09-07 11:58:11,085 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.ILogAppService' with service name 'app/log'.
+DEBUG 2016-09-07 11:58:11,086 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.INotificationAppService' with service name 'app/notification'.
+DEBUG 2016-09-07 11:58:11,087 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.IRedisAppService' with service name 'app/redis'.
+DEBUG 2016-09-07 11:58:11,088 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.IRoleAppService' with service name 'app/role'.
+DEBUG 2016-09-07 11:58:11,089 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.IUserAppService' with service name 'app/user'.
+DEBUG 2016-09-07 11:58:18,086 [8    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected (on reconnected event): {"ConnectionId":"bfba3f32-b75f-4846-a82e-2c0c90d3f18f","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2016-09-07T11:58:18.0595399+08:00","Properties":{}}
+DEBUG 2016-09-07 11:58:21,803 [7    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"55b05e0d-6324-4e75-b90a-b30c57a4f3bd","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2016-09-07T11:58:21.8031959+08:00","Properties":{}}
+DEBUG 2016-09-07 11:58:21,833 [8    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 55b05e0d-6324-4e75-b90a-b30c57a4f3bd
+DEBUG 2016-09-07 12:20:56,288 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-09-07 12:20:56,586 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2016-09-07 12:20:56,594 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.Web.SEPInstanceWebModule, SEPInstance.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 12:20:56,596 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.SEPInstanceDataModule, SEPInstance.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 12:20:56,597 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.11.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 12:20:56,597 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.11.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 12:20:56,597 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 12:20:56,598 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 12:20:56,598 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.SEPInstanceCoreModule, SEPInstance.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 12:20:56,598 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.SEPInstanceIDaoModule, SEPInstance.IDao, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 12:20:56,598 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.SEPInstanceApplicationModule, SEPInstance.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 12:20:56,599 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 12:20:56,599 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.SEPInstanceDtoModule, SEPInstance.Dto, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 12:20:56,599 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.Api.SEPInstanceWebApiModule, SEPInstance.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 12:20:56,599 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 12:20:56,600 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 12:20:56,600 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 12:20:56,600 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 12:20:56,600 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 12:20:56,603 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2016-09-07 12:20:57,550 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: SEPInstance.EntityFramework.SEPInstanceDbContext, SEPInstance.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 12:20:57,815 [1    ] Abp.Localization.LocalizationManager     - Localization disabled.
+DEBUG 2016-09-07 12:20:58,346 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2016-09-07 12:20:58,581 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 9 classes defines auto mapping attributes
+DEBUG 2016-09-07 12:20:58,581 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2016-09-07 12:20:58,596 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.OutputDto.Users.UserListDto
+DEBUG 2016-09-07 12:20:58,596 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.OutputDto.Roles.RoleListDto
+DEBUG 2016-09-07 12:20:58,596 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.OutputDto.Log.LogListDto
+DEBUG 2016-09-07 12:20:58,596 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.InputDto.Users.CreateUserInput
+DEBUG 2016-09-07 12:20:58,596 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.InputDto.Sessions.TenantLoginInfoDto
+DEBUG 2016-09-07 12:20:58,596 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.InputDto.Sessions.UserLoginInfoDto
+DEBUG 2016-09-07 12:20:58,596 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.InputDto.Roles.CreateRoleInput
+DEBUG 2016-09-07 12:20:58,596 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.InputDto.Roles.EditRoleInput
+DEBUG 2016-09-07 12:21:07,765 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.ICacheAppService' with service name 'app/cache'.
+DEBUG 2016-09-07 12:21:07,767 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.ILogAppService' with service name 'app/log'.
+DEBUG 2016-09-07 12:21:07,769 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.INotificationAppService' with service name 'app/notification'.
+DEBUG 2016-09-07 12:21:07,771 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.IRedisAppService' with service name 'app/redis'.
+DEBUG 2016-09-07 12:21:07,773 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.IRoleAppService' with service name 'app/role'.
+DEBUG 2016-09-07 12:21:07,776 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.IUserAppService' with service name 'app/user'.
+DEBUG 2016-09-07 12:21:53,856 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"e0b112f9-9623-4cc2-8488-5b025c54f7f4","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2016-09-07T12:21:53.8195109+08:00","Properties":{}}
+DEBUG 2016-09-07 12:21:53,958 [7    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: e0b112f9-9623-4cc2-8488-5b025c54f7f4
+DEBUG 2016-09-07 12:21:56,583 [7    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: e0b112f9-9623-4cc2-8488-5b025c54f7f4
+DEBUG 2016-09-07 12:21:58,141 [7    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"0542dcda-866b-414a-bab4-ecfbbeece705","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2016-09-07T12:21:58.1405759+08:00","Properties":{}}
+DEBUG 2016-09-07 12:21:58,148 [7    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 0542dcda-866b-414a-bab4-ecfbbeece705
+DEBUG 2016-09-07 12:22:13,933 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 0542dcda-866b-414a-bab4-ecfbbeece705
+DEBUG 2016-09-07 12:22:14,690 [10   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"34e3ac31-ea2d-404d-b893-648e4e084160","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2016-09-07T12:22:14.6894807+08:00","Properties":{}}
+DEBUG 2016-09-07 12:22:14,703 [18   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 34e3ac31-ea2d-404d-b893-648e4e084160
+DEBUG 2016-09-07 12:22:45,946 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 34e3ac31-ea2d-404d-b893-648e4e084160
+DEBUG 2016-09-07 12:22:46,811 [15   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"443e7b24-5610-40e4-ae36-6622651b0121","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2016-09-07T12:22:46.8113042+08:00","Properties":{}}
+DEBUG 2016-09-07 12:22:46,823 [15   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 443e7b24-5610-40e4-ae36-6622651b0121
+DEBUG 2016-09-07 12:22:52,721 [9    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 443e7b24-5610-40e4-ae36-6622651b0121
+DEBUG 2016-09-07 12:22:53,371 [10   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"f61777bb-13e5-4005-9425-73a99671653e","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2016-09-07T12:22:53.3702012+08:00","Properties":{}}
+DEBUG 2016-09-07 12:22:53,376 [8    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: f61777bb-13e5-4005-9425-73a99671653e
+DEBUG 2016-09-07 12:22:58,303 [7    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: f61777bb-13e5-4005-9425-73a99671653e
+DEBUG 2016-09-07 12:22:58,935 [8    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"a36ef5b4-b09d-4a8f-9b9a-bf6a85e8afcb","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2016-09-07T12:22:58.934098+08:00","Properties":{}}
+DEBUG 2016-09-07 12:22:58,941 [9    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: a36ef5b4-b09d-4a8f-9b9a-bf6a85e8afcb
+DEBUG 2016-09-07 12:23:09,021 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: a36ef5b4-b09d-4a8f-9b9a-bf6a85e8afcb
+DEBUG 2016-09-07 12:23:09,698 [10   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"97c4d7fa-9d51-499e-8fbe-3987b14d43f4","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2016-09-07T12:23:09.6980766+08:00","Properties":{}}
+DEBUG 2016-09-07 12:23:09,704 [13   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 97c4d7fa-9d51-499e-8fbe-3987b14d43f4
+DEBUG 2016-09-07 12:23:17,537 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 97c4d7fa-9d51-499e-8fbe-3987b14d43f4
+DEBUG 2016-09-07 12:23:18,152 [7    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"18c47408-c5c9-46ea-b15a-6f29ef287ba0","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2016-09-07T12:23:18.1524566+08:00","Properties":{}}
+DEBUG 2016-09-07 12:23:18,160 [7    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 18c47408-c5c9-46ea-b15a-6f29ef287ba0
+DEBUG 2016-09-07 12:23:19,295 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 18c47408-c5c9-46ea-b15a-6f29ef287ba0
+DEBUG 2016-09-07 12:23:19,897 [7    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"ae09dbf2-742c-4250-92a7-2742c15351ff","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2016-09-07T12:23:19.8961088+08:00","Properties":{}}
+DEBUG 2016-09-07 12:23:19,902 [7    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: ae09dbf2-742c-4250-92a7-2742c15351ff
+DEBUG 2016-09-07 12:23:25,390 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: ae09dbf2-742c-4250-92a7-2742c15351ff
+DEBUG 2016-09-07 12:23:26,014 [8    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"8e9bad9b-a6a9-46ac-8ca2-fdac647e80fd","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2016-09-07T12:23:26.0138562+08:00","Properties":{}}
+DEBUG 2016-09-07 12:23:26,019 [13   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 8e9bad9b-a6a9-46ac-8ca2-fdac647e80fd
+DEBUG 2016-09-07 12:25:05,059 [17   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"7afd8eae-740d-422b-a835-96fa9dbe8214","IpAddress":"::1","TenantId":1,"UserId":3,"ConnectTime":"2016-09-07T12:25:05.0597941+08:00","Properties":{}}
+DEBUG 2016-09-07 12:25:05,067 [21   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 7afd8eae-740d-422b-a835-96fa9dbe8214
+DEBUG 2016-09-07 12:25:08,090 [7    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 7afd8eae-740d-422b-a835-96fa9dbe8214
+DEBUG 2016-09-07 12:25:08,708 [24   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"85ec5864-2dd2-42c7-ba4e-c411de99dce0","IpAddress":"::1","TenantId":1,"UserId":3,"ConnectTime":"2016-09-07T12:25:08.7078831+08:00","Properties":{}}
+DEBUG 2016-09-07 12:25:08,713 [7    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 85ec5864-2dd2-42c7-ba4e-c411de99dce0
+DEBUG 2016-09-07 12:25:12,114 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 85ec5864-2dd2-42c7-ba4e-c411de99dce0
+DEBUG 2016-09-07 12:25:12,745 [7    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"192bd71f-9321-4a8b-9380-918b6afc5cbe","IpAddress":"::1","TenantId":1,"UserId":3,"ConnectTime":"2016-09-07T12:25:12.7441545+08:00","Properties":{}}
+DEBUG 2016-09-07 12:25:12,752 [10   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 192bd71f-9321-4a8b-9380-918b6afc5cbe
+DEBUG 2016-09-07 12:25:13,026 [7    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 8e9bad9b-a6a9-46ac-8ca2-fdac647e80fd
+DEBUG 2016-09-07 12:44:49,635 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-09-07 12:44:49,920 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2016-09-07 12:44:49,926 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.Web.SEPInstanceWebModule, SEPInstance.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 12:44:49,928 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.SEPInstanceDataModule, SEPInstance.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 12:44:49,928 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.11.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 12:44:49,929 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.11.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 12:44:49,929 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 12:44:49,929 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 12:44:49,930 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.SEPInstanceCoreModule, SEPInstance.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 12:44:49,930 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.SEPInstanceIDaoModule, SEPInstance.IDao, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 12:44:49,930 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.SEPInstanceApplicationModule, SEPInstance.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 12:44:49,930 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 12:44:49,930 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.SEPInstanceDtoModule, SEPInstance.Dto, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 12:44:49,931 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: SEPInstance.Api.SEPInstanceWebApiModule, SEPInstance.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 12:44:49,931 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 12:44:49,931 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 12:44:49,931 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 12:44:49,931 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 12:44:49,932 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.11.0.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 12:44:49,934 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2016-09-07 12:44:51,190 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: SEPInstance.EntityFramework.SEPInstanceDbContext, SEPInstance.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-07 12:44:51,462 [1    ] Abp.Localization.LocalizationManager     - Localization disabled.
+DEBUG 2016-09-07 12:44:51,945 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2016-09-07 12:44:52,212 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 9 classes defines auto mapping attributes
+DEBUG 2016-09-07 12:44:52,212 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2016-09-07 12:44:52,217 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.OutputDto.Users.UserListDto
+DEBUG 2016-09-07 12:44:52,217 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.OutputDto.Roles.RoleListDto
+DEBUG 2016-09-07 12:44:52,217 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.OutputDto.Log.LogListDto
+DEBUG 2016-09-07 12:44:52,217 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.InputDto.Users.CreateUserInput
+DEBUG 2016-09-07 12:44:52,218 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.InputDto.Sessions.TenantLoginInfoDto
+DEBUG 2016-09-07 12:44:52,218 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.InputDto.Sessions.UserLoginInfoDto
+DEBUG 2016-09-07 12:44:52,218 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.InputDto.Roles.CreateRoleInput
+DEBUG 2016-09-07 12:44:52,218 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - SEPInstance.Dto.InputDto.Roles.EditRoleInput
+DEBUG 2016-09-07 12:44:54,625 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.ICacheAppService' with service name 'app/cache'.
+DEBUG 2016-09-07 12:44:54,627 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.ILogAppService' with service name 'app/log'.
+DEBUG 2016-09-07 12:44:54,629 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.INotificationAppService' with service name 'app/notification'.
+DEBUG 2016-09-07 12:44:54,631 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.IRedisAppService' with service name 'app/redis'.
+DEBUG 2016-09-07 12:44:54,632 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.IRoleAppService' with service name 'app/role'.
+DEBUG 2016-09-07 12:44:54,633 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'SEPInstance.IAppService.IUserAppService' with service name 'app/user'.
+ERROR 2016-09-07 12:45:01,314 [7    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - Can not find IP address of the client! connectionId: 192bd71f-9321-4a8b-9380-918b6afc5cbe
+ERROR 2016-09-07 12:45:01,314 [7    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - 值不在预期的范围内。
+System.ArgumentException: 值不在预期的范围内。
+   在 System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   在 System.Web.Hosting.IIS7WorkerRequest.GetServerVariableInternal(String name)
+   在 System.Web.Hosting.IIS7WorkerRequest.GetServerVariable(String name)
+   在 System.Web.HttpRequest.FillInServerVariablesCollection()
+   在 System.Web.HttpServerVarsCollection.Populate()
+   在 System.Web.HttpServerVarsCollection.Get(String name)
+   在 Microsoft.Owin.Host.SystemWeb.OwinCallContext.Microsoft.Owin.Host.SystemWeb.CallEnvironment.AspNetDictionary.IPropertySource.GetServerRemoteIpAddress()
+   在 Microsoft.Owin.Host.SystemWeb.CallEnvironment.AspNetDictionary.get_ServerRemoteIpAddress()
+   在 Microsoft.Owin.Host.SystemWeb.CallEnvironment.AspNetDictionary.PropertiesTryGetValue(String key, Object& value)
+   在 Microsoft.Owin.Host.SystemWeb.CallEnvironment.AspNetDictionary.System.Collections.Generic.IDictionary<System.String,System.Object>.get_Item(String key)
+   在 Abp.Web.SignalR.Hubs.AbpCommonHub.GetIpAddressOfClient() 位置 D:\Halil\GitHub\aspnetboilerplate\src\Abp.Web.SignalR\Web\SignalR\Hubs\AbpCommonHub.cs:行号 102
+DEBUG 2016-09-07 12:45:01,338 [7    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected (on reconnected event): {"ConnectionId":"192bd71f-9321-4a8b-9380-918b6afc5cbe","IpAddress":"","TenantId":1,"UserId":3,"ConnectTime":"2016-09-07T12:45:01.3198685+08:00","Properties":{}}
+DEBUG 2016-09-07 12:45:05,159 [7    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"848e4412-768e-44c3-83da-fce78c4853b7","IpAddress":"::1","TenantId":1,"UserId":3,"ConnectTime":"2016-09-07T12:45:05.1595926+08:00","Properties":{}}
+DEBUG 2016-09-07 12:45:05,187 [9    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 848e4412-768e-44c3-83da-fce78c4853b7
+DEBUG 2016-09-07 12:45:10,725 [7    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 848e4412-768e-44c3-83da-fce78c4853b7
+DEBUG 2016-09-07 12:45:11,391 [7    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"a58ee038-b15e-461e-bfe3-556e1a980230","IpAddress":"::1","TenantId":1,"UserId":3,"ConnectTime":"2016-09-07T12:45:11.3919075+08:00","Properties":{}}
+DEBUG 2016-09-07 12:45:11,399 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: a58ee038-b15e-461e-bfe3-556e1a980230
+DEBUG 2016-09-07 12:45:14,439 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: a58ee038-b15e-461e-bfe3-556e1a980230
+DEBUG 2016-09-07 12:45:15,065 [7    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"8effbf0d-3b4c-4644-81a7-0ac7c1dbbb6f","IpAddress":"::1","TenantId":1,"UserId":3,"ConnectTime":"2016-09-07T12:45:15.0650356+08:00","Properties":{}}
+DEBUG 2016-09-07 12:45:15,070 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 8effbf0d-3b4c-4644-81a7-0ac7c1dbbb6f
+DEBUG 2016-09-07 12:45:19,036 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 8effbf0d-3b4c-4644-81a7-0ac7c1dbbb6f
+DEBUG 2016-09-07 12:45:19,670 [13   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"0baba5fc-2994-4bfd-961e-778796d6c4f7","IpAddress":"::1","TenantId":1,"UserId":3,"ConnectTime":"2016-09-07T12:45:19.6695827+08:00","Properties":{}}
+DEBUG 2016-09-07 12:45:19,676 [13   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 0baba5fc-2994-4bfd-961e-778796d6c4f7
+DEBUG 2016-09-07 13:10:12,284 [54   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 0baba5fc-2994-4bfd-961e-778796d6c4f7
+DEBUG 2016-09-07 13:10:13,208 [45   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"761e8900-3a48-4c46-a6d2-96c7f8aed47f","IpAddress":"::1","TenantId":1,"UserId":3,"ConnectTime":"2016-09-07T13:10:13.2083111+08:00","Properties":{}}
+DEBUG 2016-09-07 13:10:13,215 [46   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 761e8900-3a48-4c46-a6d2-96c7f8aed47f

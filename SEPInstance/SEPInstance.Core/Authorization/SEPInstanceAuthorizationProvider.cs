@@ -15,7 +15,7 @@ namespace SEPInstance.Authorization
             //初始化所有权限
             foreach (var permission in PermissionNames.GetAuthorization().Values)
             {
-                var pages = context.CreatePermission(permission, L(PermissionNames.GetAuthorizationDisplayName(permission)));
+                context.CreatePermission(permission, L(PermissionNames.GetAuthorizationDisplayName(permission)));
             }
         }
 
